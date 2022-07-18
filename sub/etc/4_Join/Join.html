@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/4_Join.js"></script>
+    <link rel="stylesheet" href="./css/Join.css">
+    <link rel="shortcut icon" href="./images/1_favicon_icon.ico.ico">
+
+<script>
+    	window.onload = function() {
+		let frm = document.userInfo;
+		let date = new Date();
+		let year = date.getFullYear();
+            for(let i=1960; i<=year; i++) {
+                frm.birthday.add(new Option(i,i));
+            }
+	    }
+</script>
+
+</head>
+<body>
+    <header>
+        <h1><a href="../../../index.html"><img src="./images/header_logo.png" alt="logo"></a></h1>
+
+        <nav>
+            <ul class="gnb">
+                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn" onclick="openMenu()"></a></li>
+            </ul>
+        </nav>
+
+        <div class="side-menu">
+            <ul class="s-menu">
+                <li><a href="../2_login_member/login_member.html">Login</a></li>
+                <li><a href="../3_Cart/cart.html"><img src="./images/cart.png" alt="cart-icon"></a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search-icon" onclick="openSearh()"></a></li>
+            </ul>
+        </div> 
+
+        <div class="menu-sub" id="menu-sub">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            
+            <ul class="myMenu">
+                <li class="menu-top">
+                    <a href="../2_login_member/login_member.html">로그인</a>
+                    <a href="../3_Cart/cart.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="#" class="sub-menu1">Product</a>
+                    <ul class="sub-menu-des1">
+                        <li><a href="../../product_bed/product_bed.html">Bed</a></li>
+                        <li><a href="../../product_bedding/product_bedding.html">Bedding</a></li>
+                        <li><a href="../../product_furniture/product_furniture.html">Furniture</a></li>
+                        <li><a href="../../product_roomset/product_roomset.html">RoomSet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="sub-menu2">Brand</a>
+                    <ul class="sub-menu-des2">
+                        <li><a href="../../brand/the_black/the_black.html">the Black</a></li>
+                        <li><a href="../../brand/the_black/the_black.html">heritage</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../../community/community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <div id="search-sub" class="search-sub">
+            <span class="closebtn" onclick="closeSearch()">×</span>
+
+            <div class="search-sub-content">
+                <form action="#">
+                    <input type="text" placeholder="검색어를 입력하세요!" name="search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav class="main-menu">            
+            <div class="wrapper">
+                <ul class="gnb">
+                    <li><a href="../../../index.html">HOME</a></li>
+                    <li><a href="../../community/community.html">고객센터</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="title-join">
+            <div class="title">
+                <div class="title-fir">
+                    <p>Join</p>
+                </div>
+
+                <!-- <div class="title-sub">
+                    <p>회원가입</p>
+                </div> -->
+                
+            </div>
+        
+            <!-- <form method="post" action="./js/joinjsp.html" name="userInfo"></form> -->
+            <div class="form_area">
+                <div class="wrap_email">
+                    
+                    <div class="join_lab">
+                        <label for="join_id"></label>
+                    </div>
+                    <div class="join_text">
+                        <input type="text" id="join_id" name="cstmid" valid="required" placeholder="   이메일 ">
+                    </div>
+
+                </div>
+
+                <div class="wrap_pw">
+                    
+                    <div class="inp_text">
+                        <input type="password" id="join_pw" name="passwd" valid="required" placeholder="   비밀번호 ">
+                    </div>
+
+                </div>
+
+                <div class="wrap_repw">
+                    
+                    <div class="inp_text">
+                        <input type="password" id="join_pw_chk" valid="required" placeholder="   비밀번호 재입력 ">
+                    </div>
+
+                </div>
+
+                <div class="name-gender">
+                    
+                    <div class="wrap_name">
+                        
+                        <div class="name_lab">
+                            <label for="join_name">이름</label>
+                        </div>
+                        <div class="name_text">
+                            <input type="text" id="join_name" name="nm" valid="required" placeholder="   이름을(를) 입력하세요 ">
+                        </div>
+    
+                    </div>
+
+                    <div class="wrap_gender">
+                        
+                        <div class="join_gender">
+                            <label for="join_id">성별</label>
+                        </div>
+    
+                        <div class="join_text">
+                            <select name="gender" id="choice" size="1">
+                                <optgroup>
+                                    <option value="선택" selected>선택</option>
+                                    <option value="남">남</option>
+                                    <option value="여">여</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info" id="info_birth">
+
+                    <!-- <input type="text" name="birthyy" maxlength="4" placeholder="년(4자리)" size="4"> -->
+                    <select class="box" id="birth_year" name= "birthday">
+						<option value="#">년도선택</option>
+					</select> <!-- 스크립트 적용 -->
+
+                    <select class="box" id="birth_month">
+                        
+                        <option value="">월</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+                        
+                    </select>
+
+                    <select class="box" id="birth_day">
+                        <option disabled selected>일</option>
+                    </select>
+
+                </div>
+
+                <div class="wrap_phonenum">
+                    
+                    <div class="join_pho">
+                        <label for="join_id"></label>
+                        <input type="text" id="join_id" name="cstmid" valid="required" placeholder="   휴대폰번호 입력 ">
+                    </div>
+
+                </div>
+
+                <div class="wrap_join_term">
+                    <div class="all_terms">
+
+                        <ul>
+                            <li>
+                                <label for="join_terms_all">
+                                    <span>약관동의</span>
+                                </label>
+
+                                <div class="terms_checkbx">
+                                    <input type="checkbox" name="1" value="all_agree" >
+                                </div>
+                            
+                            </li>
+
+                            <li>
+                                <label for="join_terms1">
+                                    <span>이용약관 (필수)</span>
+                                </label>
+
+                                <div class="terms_checkbx">
+                                    <input type="checkbox" name="2" value="agree" >
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <label for="join_terms2">
+                                    <span>개인정보처리방침 (필수)</span>
+                                </label>
+
+                                <div class="terms_checkbx">
+                                    <input type="checkbox" name="3" value="agree" >
+                                </div>
+                            </li>
+
+                            <li>
+                                <label for="join_terms3">
+                                    <span>마케팅 수신동의 (선택)</span>
+                                </label>
+
+                                <div class="terms_checkbx">
+                                    <input type="checkbox" name="4" value="agree">
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+                
+            </div> 
+
+            <div class="join-button">
+                <div class="join-input-submit">                   
+                    <input type="submit" value="가입하기">
+                    <input type="button" value="취소하기">
+                    <!-- <button type="submit" class="join-input-submit"><a href="#">가입하기</a></button> -->
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+</body>
+</html>

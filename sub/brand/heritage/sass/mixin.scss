@@ -1,0 +1,116 @@
+@mixin num($num_size){
+    font: {
+        family: $font;
+        size: $num_size;
+        weight: 700;
+    }
+    color: $point-color;
+    line-height: 37.5px;
+}
+
+@mixin txt($size, $weight) {
+    font: {
+        size: $size;
+        weight: $weight;
+    }
+    color: #000;
+}
+
+@mixin p_des($p_des_size:14px) {
+    line-height: 1.5;
+    font-size: $p_des_size;
+    // tablet에서 18px
+    margin: auto;
+    color: #999;
+}
+
+@mixin shadow($x, $y) {
+    text-shadow: $x $y 2px $font-color;
+}
+
+@mixin heritage_ta($row: row) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: $row;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@mixin heritage_pc {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+@mixin heritage_text {
+    width: 47%;
+    // background-color: palegreen;
+}
+
+@mixin philosophy_h2($h2-size, $h2-height: 0.8em) {
+    display: block;
+    font: {
+        family: $font;
+        size: $h2-size;
+        weight: 200;
+        style: italic;
+    }
+    margin: 0 ;
+    color: $bg-color;
+    line-height: $h2-height;
+}
+
+@mixin philosophy_p($p-size: 0.4em, $p-height: 13.5px) {
+    display: block;
+    font: {
+        family: $foont;
+        size: $p-size;
+        weight: 300;
+    }
+    color: $bg-color;
+    text-align: center;
+    letter-spacing: 0.05em;
+    line-height: p-height;
+}
+
+@mixin phil_flex {
+    flex-wrap: wrap;
+    width: 25%;
+    height: 100px;
+    padding-bottom: 23%;
+    margin-right: 20px;
+}
+
+@mixin background($img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url($img);
+    background-size: cover;
+}
+
+@mixin wrapper {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    // background-color: slateblue;
+}
+
+@mixin responsive($break) {
+    @if $break == mobile-size {
+        @media screen and (min-width: $break-mobile) {
+            @content;
+        }
+    }
+    @else if $break == tablet-size {
+        @media screen and (min-width: $break-tablet) {
+            @content;
+        }
+    }
+    @else if $break == pc-size {
+        @media screen and (min-width: $break-pc) {
+            @content;
+        }
+    }
+}

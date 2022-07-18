@@ -1,0 +1,1064 @@
+@import "style.scss";
+@import "common.scss";
+@import "mixin.scss";
+
+body {
+    -ms-overflow-style: none;
+
+    @include responsive(pc-size) {
+        padding-left: 80px;
+    }
+}
+
+::-webkit-scrollbar { display: none; }
+
+// header-area
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    border-bottom: 1px solid #333;
+    background-color: $bg-color;
+    z-index: 1;
+
+    @include responsive(pc-size) {
+        width: 80px;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0;
+        border-bottom: 0;
+        border-right: 1px solid #333;
+    }
+
+    h1 {
+        order: 2;
+
+        @include responsive(pc-size) {
+            order: 1;
+        }
+
+    }
+
+    nav {
+        order: 1;
+
+        @include responsive(pc-size) {
+            order: 2;
+        }
+
+        ul.gnb {
+            @include responsive(pc-size) {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            li {
+                display: block;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    div.side-menu {
+        order: 3;
+
+        .s-menu {         
+            @include responsive(pc-size) {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            li {
+                display: none;
+
+                @include responsive(pc-size) {
+                    display: block;
+                    margin-top: 35px;
+                }
+
+                &:first-child {
+                    font-size: 18px;
+                    // transform: rotate(-90deg);
+                    margin-top: 0;
+
+                    a {
+                        color: $font-color;
+                    }
+                }
+    
+                &:last-child {
+                    display: block;
+    
+                    a {
+                        img {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div.menu-sub {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 0 40px;
+        margin: 0 auto;
+        z-index: 10;
+        background-color: rgba(256,256,256, 0.9);
+
+        @include responsive(pc-size) {
+            margin-left: 80px;
+            width: 450px;
+        }
+
+        a.closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 60px;
+        }
+
+        a {
+            color: $font-color;
+            padding: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 36px;
+            transition: 0.3s;
+
+            &:hover {
+                color: #999;
+            }
+
+            &:focus {
+                color: #999;
+            }
+        }
+
+        ul.myMenu {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: left;
+
+            .menu-top {
+                display: flex;
+
+                a {
+                    font-size: 22px;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                    color: $font-color;
+
+                    &:hover {
+                        color: #999;
+                    }
+        
+                    &:focus {
+                        color: #999;
+                    }
+                }
+            }
+
+            li {
+                margin-bottom: 10px;
+
+                ul {
+                    li {
+                        a {
+                            font-weight: 400;
+                            font-size: 20px;
+                            text-indent: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div.search-sub {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0%;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: 0.5s;
+        background-color: rgba(0,0,0, 0.9);
+
+        .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 60px;
+            cursor: pointer;
+            color: $bg-color;
+
+            &:hover {
+                color: #ccc;
+            }
+        }
+
+        .search-sub-content {
+            position: relative;
+            top: 45%;
+            transform: translateYs(-45%);
+            width: 100%;
+            margin: auto;
+
+            input {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 15px;
+                font-size: 17px;
+                border: none;
+                width: 80%;
+                margin: auto;
+                background: $bg-color;
+
+                &:hover {
+                    background: #f1f1f1;
+                }
+            }
+        }
+    }
+}
+
+/////////////////////// header ////////////////////////////
+
+main {
+    #title_se {
+        padding-top: 60px;
+
+        @include responsive(pc-size) {
+            padding-top: 0;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 150px;
+            background: url(../images/history_visual.jpg) no-repeat center;
+            background-size: cover;
+
+            @include responsive(tablet-size) {
+                height: 200px;
+            }
+            @include responsive(pc-size) {
+                height: 538px;
+            }
+
+            .wrapper {
+                @include wrapper;
+
+                h1 {
+                    font: {
+                        family: $font;
+                        size: 2em;
+                        weight: 300;
+                        style: italic;
+                    }
+                    color: $bg-color;
+                    text-align: center;
+                    text-shadow: 3px 3px 2px #000;
+                    line-height: 1.2em;
+
+                    @include responsive(tablet-size) {
+                        font: {
+                            size: 3em;
+                            weight: 500;
+                        }
+                        text-shadow: 2px 2px 2px #000;
+                    }
+                    @include responsive(pc-size) {
+                        font: {
+                            size: 4em;
+                            weight: 600;
+                        }
+                        letter-spacing: 0.05em;
+                        text-shadow: 3px 3px 2px #000;
+                    }
+                }
+            }
+        }
+    } 
+
+/////////////////////// #title_se ////////////////////////////
+
+    #heritage{
+        margin-top: 50px;
+
+        @include responsive(tablet-size) {
+            margin-top: 100px;
+        }
+        @include responsive(pc-size) {
+            margin-top: 200px;
+        }
+
+        .wrapper {
+            @include wrapper;
+
+            @include responsive(tablet-size) {
+                position: relative;
+            }
+
+            h1 {
+                display: none;
+            }
+
+            .br {
+                @include responsive(tablet-size) {
+                    position: absolute;
+                    top: 0;
+                    right: 50%;
+                    width: 2px;
+                    height: 100%;
+                    background-color: $font-color;
+                }
+            }
+
+            img, iframe {
+                width: 100%;
+                height: 100%;
+
+                @include responsive(tablet-size) {
+                    display: inline;
+                    width: 47%;
+                }
+            }
+
+            img[class*="con"] {
+                @include responsive(tablet-size) {
+                    width: 20px;
+                    height: 13px;
+                }
+            }
+
+            iframe {
+                @include responsive(pc-size) {
+                    height: 250px;
+                }
+            }
+
+            h2 {
+                @include num(2em);
+                text-align: center;
+                margin-top: 30px;
+
+                @include responsive(tablet-size) {
+                    margin-top: 0;
+                }
+                @include responsive(pc-size) {
+                    @include num(3em);
+                }
+            }
+
+            .sub {
+                @include txt(0.9em, 800);
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 15px;
+
+                @include responsive(tablet-size) {
+                    letter-spacing: -0.01em;
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                }
+                @include responsive(pc-size) {
+                    @include txt(1.2em, 600);
+                    letter-spacing: -0.01em;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            p {
+                @include p_des;
+
+                @include responsive(tablet-size) {
+                    @include p_des(18px);
+                }
+            }
+
+            .h_70, .h_76, .h_25, .h_31, .h_07, .h_92-93-95 > .h_95 {
+                @include responsive(tablet-size) {
+                    @include heritage_ta;
+                    margin-bottom: 60px;
+                }
+                @include responsive(pc-size) {
+                    @include heritage_pc;
+                    margin-bottom: 120px;
+                }
+            }
+
+            .h_92-93-95 > .h_92,
+            .h_92-93-95 > .h_93 {
+                @include responsive(tablet-size) {
+                    @include heritage_ta;
+                    margin-bottom: 10px
+                }
+                @include responsive(pc-size) {
+                    @include heritage_pc;
+
+                }
+            }
+
+            .h_70 > .text_70, 
+            .h_25 > .text_25,
+            .h_31 > .text_31,
+            .h_07 > .text_07,
+            .text_92-93-95 {
+                @include responsive(tablet-size) {
+                    @include heritage_text;
+                    margin-left: 6%;
+                }
+
+                h2, p {
+                    @include responsive(tablet-size) {
+                        text-align: left;
+                    }
+                }
+            }
+
+            // 오른쪽 이미지
+
+            .h_27, .h_99, .h_58-970 > .h_970 {
+                @include responsive(tablet-size) {
+                    @include heritage_ta(row-reverse);
+                    margin-bottom: 60px;
+                }
+                @include responsive(pc-size) {
+                    @include heritage_pc;
+                    margin-bottom: 120px;
+                }
+            }
+
+            .h_58-970 > .h_58,
+            .h_18 > .factorium,
+            .h_18 > .terrace,
+            .h_18 > .safety_first {
+                @include responsive(tablet-size) {
+                    @include heritage_ta(row-reverse);
+                    margin-bottom: 10px
+                }
+                @include responsive(pc-size) {
+                    @include heritage_pc;
+
+                }
+            }
+
+            .h_76 > .text_76, 
+            .h_27 > .text_27,
+            .h_99 > .text_99,
+            .text_58-970,
+            .text_18 {
+                @include responsive(tablet-size) {
+                    @include heritage_text;
+                    margin-right: 6%;
+                }
+
+                h2, p {
+                    @include responsive(tablet-size) {
+                        text-align: right;
+                    }
+                }
+            }
+            // 왼쪽 이미지
+
+            .h_70 {
+                @include responsive(tablet-size) {
+                    position: relative;
+                }
+
+                .con_01 {
+                    display: none;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+            }
+
+            .h_76 {
+                @include responsive(tablet-size) {
+                    position: relative;
+                }
+
+                .con_02 {
+                    width: 20px;
+                    height: 13px;
+                    margin-left: auto;
+                    margin-right: auto;    
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+            }
+
+            .h_25 {
+                @include responsive(tablet-size) {
+                    position: relative;
+                }
+
+                .con_03 {
+                    display: none;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+            }
+
+            .h_27 {
+
+                .img_27 {
+                    text-align: center;
+
+                    @include responsive(tablet-size) {
+                        @include heritage_text;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+    
+                    .ta {
+                        display: inline;
+                        width: 18%;
+                        height: 49%;
+                        margin-right: 5px;
+                        margin-bottom: 5px;
+
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+    
+                        @include responsive(tablet-size) {
+                            display: inline-block;
+                            width: 30%;
+                            height: 49%;
+                            margin-right: 5px;
+                            margin-bottom: 5px;
+                        }
+    
+                        &:nth-child(3) {
+                            @include responsive(tablet-size) {
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+                }
+
+                .con_04 {
+                    display: none;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+            }
+
+            .h_31 {
+                .img_31 {
+                    display: flex;
+                    justify-content: center;
+                    
+                    @include responsive(tablet-size) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 47%;
+                        // background-color: tomato;
+                    }
+    
+                    img {
+                        width: 50%;
+                        height: 90%;
+
+                        @include responsive(tablet-size) {
+                            display: inline-block;
+                            width: 50%;
+                            height: 90%;
+                        }
+                    }
+                }
+
+                .con_05 {
+                    display: none;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+            }
+
+            .h_58 {
+                @include responsive(tablet-size) {
+                    position: relative;
+                }
+
+                .con_06 {
+                    display: none;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+            }
+
+            .h_970 {
+                @include responsive(tablet-size) {
+                    position: relative;
+                }
+
+                .con_07 {
+                    display: none;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+            }
+
+            .h_92 {
+                @include responsive(tablet-size) {
+                    position: relative;
+                }
+
+                .con_08 {
+                    display: none;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+            }
+
+            .h_93 {
+                @include responsive(tablet-size) {
+                    position: relative;
+                }
+
+                .con_09 {
+                    display: none;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+            }
+
+            .h_95 {
+                @include responsive(tablet-size) {
+                    position: relative;
+                }
+
+                .con_10 {
+                    display: none;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+            }
+
+            .h_99 {
+                @include responsive(tablet-size) {
+                    position: relative;
+                }
+
+                .con_11 {
+                    display: none;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+            }
+
+            .h_07 {
+                @include responsive(tablet-size) {
+                    position: relative;
+                }
+
+                .con_12 {
+                    display: none;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+            }
+
+            .h_18 {
+                @include responsive(tablet-size) {
+                    position: relative;
+                }
+
+                .con_13 {
+                    display: none;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+
+                        transform: translate(-50%)
+                    }
+                }
+
+                .factorium > img,
+                .terrace > img,
+                .safety_first > img {
+                    margin-bottom: 30px;
+                }
+
+                .text_18 {
+                    h2 {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+        
+                        @include responsive(tablet-size) {
+                            margin-top: 8px;
+                            margin-bottom: 8px;
+                        }
+                        @include responsive(pc-size) {
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+/////////////////////// #heritage ////////////////////////////
+
+    #philosophy {
+        margin-top: 50px;
+
+        @include responsive(tablet-size) {
+            width: 100%;
+            background: url(../images/phil_img.jpg);
+            background-size: cover;
+        }
+
+        @include responsive(pc-size) {
+            margin-top: 100px
+        }
+
+        .wrapper {
+            @include responsive(tablet-size) {
+                @include wrapper;
+                padding-top: 15px;
+                padding-bottom: 80px;
+            }
+
+            @include responsive(pc-size) {
+                padding-top: 25px;
+                padding-bottom: 100px;
+            }
+
+            h2 {
+                display: none;
+
+                @include responsive(tablet-size) {
+                    @include philosophy_h2(1em);
+                    text-align: center;
+                    text-shadow: 2px 2px 2px rgb(19, 19, 19);
+                    margin-bottom: 5px;
+                }
+                @include responsive(pc-size) {
+                    @include philosophy_h2(1.2em);
+                }
+            }
+
+            p {
+                display: none;
+
+                @include responsive(tablet-size) {
+                    @include philosophy_p;
+                }
+                @include responsive(pc-size) {
+                    @include philosophy_p(0.8em, 17px);
+                }
+            }
+
+            .phil_title {
+                height: 100px;
+                @include background("../images/phil_img.jpg");
+
+                h1 {
+                    font: {
+                        family: $font;
+                        size: 3em;
+                        weight: 200;
+                        style: italic;
+                    }
+                    text-shadow: 2px 5px 3px rgb(133, 133, 133);;
+                    color: $bg-color;
+                    letter-spacing: 0.03em;
+                    margin: 0 auto;
+
+                    @include responsive(tablet-size) {
+                        font: {
+                            family: $font;
+                            size: 4em;
+                            weight: 200;
+                        }
+                        text-shadow: 4px 6px 3px rgb(133, 133, 133);
+                    }
+                    @include responsive(pc-size) {
+                        font: {
+                            family: $font;
+                            size: 6em;
+                            weight: 200;
+                        } 
+                    }
+                } 
+
+                @include responsive(tablet-size) {
+                    background: none;
+                    margin-bottom: 40px;
+                }
+                @include responsive(pc-size) {
+                    margin-top: 20px;
+                    margin-bottom: 35px;
+                }
+            }
+
+            .phil_flex {
+                @include responsive(tablet-size) {
+                    display: flex;
+                }
+
+                .comfort {
+                    &::before {
+                        content: "Comfort";
+                        height: 70px;
+                        @include philosophy_h2(2em, 70px);
+                        line-height: 70px;
+                        text-shadow: 4px 4px 2px rgb(19, 19, 19);
+
+                        @include responsive(tablet-size) {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        animation-play-state: paused;
+                    }
+
+                    &:hover::before {
+                        content: "편안함의 원칙을 지켜나갑니다";
+                        @include philosophy_p;
+
+                        @include responsive(tablet-size) {
+                            display: none;
+                        }
+                    }
+                    @include background("../images/list1.jpg");
+
+                    @include responsive(tablet-size) {
+                        @include phil_flex;
+                    }
+                }
+
+                .eco-friendly {
+                    &::before {
+                        content: "Eco-friendly";
+                        height: 70px;
+                        @include philosophy_h2(2em, 70px);
+                        line-height: 70px;
+                        text-shadow: 4px 4px 2px rgb(19, 19, 19);
+
+                        @include responsive(tablet-size) {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        animation-play-state: paused;
+                    }
+
+                    &:hover::before {
+                        content: "다음 세대를 생각합니다";
+                        @include philosophy_p;
+
+                        @include responsive(tablet-size) {
+                            display: none;
+                        }
+                    }
+                    @include background("../images/list2.jpg");
+
+                    @include responsive(tablet-size) {
+                        @include phil_flex;;
+                    }
+                }
+
+                .s_c {
+                    &::before {
+                        content: "Science & Craftsmanship";
+                        height: 70px;
+                        @include philosophy_h2(1.7em, 70px);
+                        line-height: 70px;
+                        text-shadow: 4px 4px 2px rgb(19, 19, 19);
+
+                        @include responsive(tablet-size) {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        animation-play-state: paused;
+                    }
+
+                    &:hover::before {
+                        content: "품질에 대한 고집으로 기본 원칙을 지킵니다";
+                        @include philosophy_p;
+
+                        @include responsive(tablet-size) {
+                            display: none;
+                        }
+                    }
+                    @include background("../images/list3.jpg");
+
+                    @include responsive(tablet-size) {
+                        @include phil_flex;
+                    }
+                }
+
+                .life {
+                    &::before {
+                        content: "Life";
+                        height: 70px;
+                        @include philosophy_h2(2em, 70px);
+                        line-height: 70px;
+                        text-shadow: 4px 4px 2px rgb(19, 19, 19);
+
+                        @include responsive(tablet-size) {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        animation-play-state: paused;
+                    }
+
+                    &:hover::before {
+                        content: "침대를 넘어 인생을 만듭니다";
+                        @include philosophy_p;
+
+                        @include responsive(tablet-size) {
+                            display: none;
+                        }
+                    }
+                    @include background("../images/list4.jpg");
+
+                    @include responsive(tablet-size) {
+                        @include phil_flex;
+                    }
+                }
+
+                .phil_txt {
+                    @include responsive(tablet-size) {
+                        margin: 35% 20% 0 20%;
+                    }
+
+                    @include responsive(pc-size) {
+                        margin: 40% 20% 0 20%;
+                    }
+                }
+            }
+        }
+    }
+}

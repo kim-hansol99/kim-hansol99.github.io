@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/product_bedding.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/product_bedding.js"></script>
+    <link rel="shortcut icon" href="./images/1_favicon_icon.ico.ico">
+    <title>Product</title>
+</head>
+<body>
+    <header>
+        <h1><a href="../../index.html"><img src="./images/header_logo.png" alt="logo"></a></h1>
+
+        <nav>
+            <ul class="gnb">
+                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn" onclick="openMenu()"></a></li>
+            </ul>
+        </nav>
+
+        <div class="side-menu">
+            <ul class="s-menu">
+                <li><a href="../etc/2_login_member/login_member.html">Login</a></li>
+                <li><a href="../etc/3_Cart/cart.html"><img src="./images/cart.png" alt="cart-icon"></a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search-icon" onclick="openSearh()"></a></li>
+            </ul>
+        </div> 
+
+        <div class="menu-sub" id="menu-sub">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            
+            <ul class="myMenu">
+                <li class="menu-top">
+                    <a href="../etc/2_login_member/login_member.html">로그인</a>
+                    <a href="../etc/3_Cart/cart.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="#" class="sub-menu1">Product</a>
+                    <ul class="sub-menu-des1">
+                        <li><a href="../product_bed/product_bed.html">Bed</a></li>
+                        <li><a href="../product_bedding/product_bedding.html">Bedding</a></li>
+                        <li><a href="../product_furniture/product_furniture.html">Furniture</a></li>
+                        <li><a href="../product_roomset/product_roomset.html">RoomSet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="sub-menu2">Brand</a>
+                    <ul class="sub-menu-des2">
+                        <li><a href="../brand/the_black/the_black.html">the Black</a></li>
+                        <li><a href="../brand/heritage/heritage.html">heritage</a></li>
+                    </ul>
+                </li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../community/community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <div id="search-sub" class="search-sub">
+            <span class="closebtn" onclick="closeSearch()">×</span>
+
+            <div class="search-sub-content">
+                <form action="#">
+                    <input type="text" placeholder="검색어를 입력하세요!" name="search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrapper">
+                <h1>BEDDING</h1>
+                <div class="tabs-menu">
+                    <ul class="tabs">
+                        <li class="tab_item"><a href="#all">All</a></li>
+                        <li class="tab_item"><a href="#set">Set</a></li>
+                        <li class="tab_item"><a href="#single">Single</a></li>
+                        <li class="tab_item"><a href=""></a></li>
+                    </ul>
+                </div> <!-- tabs-menu -->
+
+                
+                    <div class="filter-menu">
+                        <select name="sale" id="sale">
+                            <option value="all_sale">판매처</option>
+                            <option value="directly">직영</option>
+                            <option value="online">온라인</option>
+                            <option value="outlet">아울렛</option>
+                        </select>
+
+
+                        <select name="sale" id="sale">
+                            <option value="material">소재</option>
+                            <option value="cotton">코튼</option>
+                            <option value="goose">구스</option>
+                            <option value="modal">모달</option>
+                        </select>
+
+                        <select name="sale" id="sale">
+                            <option value="style">스타일</option>
+                            <option value="mono">무지</option>
+                            <option value="pattern">디자인/패턴</option>
+                            <option value="lace">레이스/자수</option>
+                        </select>
+
+                    </div> <!-- filter-menu -->
+
+                <div class="tabs-contents">
+                    <div class="all">
+                        <a href="../product_furniture/sub/table/table.html" class="set"><img src="./images/bn/set/1_Benedict STITCH.png" alt="1_Benedict STITCH"></a>
+                        <a href="../product_furniture/sub/table/table.html" class="set"><img src="./images/bn/set/2_Francis ARME.png" alt="2_Francis ARME"></a>
+                        <a href="../product_furniture/sub/table/table.html" class="set"><img src="./images/bn/set/3_FrancisRASIL.png" alt="3_FrancisRASIL.png"></a>
+                        <a href="../product_furniture/sub/table/table.html" class="set"><img src="./images/bn/set/4_Francis ARTNEY.png" alt="4_Francis ARTNEY"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/6_BenedictMONCELLO.png" alt="6_BenedictMONCELLO"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/7_BenedictLOESS.png" alt="7_BenedictLOESS"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/8_BenedictELPIS.png" alt="8_BenedictELPIS"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/9_BenedictVANTE.png" alt="9_BenedictVANT"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/10_Benedict LIDAWN.png" alt="10_Benedict LIDAWN"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/11_BenedictLESSIA.png" alt="11_BenedictLESSIA"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/12_BenedictDESENNE.png" alt="12_BenedictDESENNE"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/13_BenedictMITTY.png" alt="13_BenedictMITTY"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/14_BenedictORRICO.png" alt="14_BenedictORRICO"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/15_BenedictCLASSIC.png" alt="15_BenedictCLASSIC"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/16_BenedictBOLD.png" alt="16_BenedictBOLD"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/17_WhiteCollectionTEANA.png" alt="17_WhiteCollectionTEANA"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/18_WhiteCollectionDURET.png" alt="18_WhiteCollectionDURET"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/19_WhiteCollectionELMA.png" alt="/19_WhiteCollectionELMA"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/20_ELROND.png" alt="20_ELROND"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/21_ MALTA.png" alt="21_ MALTA"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/22_VELMA.png" alt="22_VELMA"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/23_Francis DEACON.png" alt="23_Francis DEACON"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/24_Francis POMELO.png" alt="24_Francis POMELO"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/25_Francis TIMONE.png" alt="25_Francis TIMONE"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/26_Francis TIYAN.png" alt="26_Francis TIYAN"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/27_Francis BRIEL.jpg" alt="27_Francis BRIEL"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/28_Francis DUPPLIN.png" alt="28_Francis DUPPLIN"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/29_Francis MILOS.jpeg" alt="29_Francis MILOS"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/30_Francis IVANA.png" alt="30_Francis IVANA"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/31_Francis TICELLI.jpeg" alt="31_Francis TICELLI"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/32_Francis MARCELO.jpg" alt="32_Francis MARCELO"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/33_FrancisREPARO.jpg" alt="33_FrancisREPARO"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/34_Francis DAUNT.jpg" alt="34_Francis DAUNT"></a>
+                        <a href="#" class="set"><img src="./images/bn/set/35_Francis MERRYN.jpg" alt="35_Francis MERRYN"></a>
+
+                        <a href="#" class="single"><img src="./images/bn/single/5_KUNSEMULLERDualZoneGoose Pillow.png" alt="5_KUNSEMULLERDualZoneGoose Pillow"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/36_Microfiber Duvet III.jpg" alt="36_Microfiber Duvet III"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/37_Goose Daily DUVET.jpg" alt="37_Goose Daily DUVET"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/38_Goose Rear Duvet Light.jpg" alt="38_Goose Rear Duvet Ligh"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/39_Soyfiber DUVET.jpg" alt="39_Soyfiber DUVET"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/40_KENOSHA HOME CEDD Goose DUVET LIGHT.jpg" alt="40_KENOSHA HOME CEDD Goose DUVET LIGHT"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/41_KENOSHA HOME MARTIL PAD.jpg" alt="41_KENOSHA HOME MARTIL PAD"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/42_KENOSHA HOME MUNIK PAD.jpg" alt="42_KENOSHA HOME MUNIK PAD"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/43_KENOSHA HOME LISSE PAD.jpg" alt="43_KENOSHA HOME LISSE PAD"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/44_KENOSHA HOME Mattress Pad.jpg" alt="44_KENOSHA HOME Mattress Pad"></a>
+
+                        <a href="#" class="single"><img src="./images/bn/single/45_KENOSHA HOME FRILL PAD.jpg" alt="45_KENOSHA HOME FRILL PAD"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/46_KENSHA HOME RIBBON PAD.jpg" alt="46_KENSHA HOME RIBBON PAD"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/47_KENOSHA HOME Matress Quilting Cover.jpg" alt="47_KENOSHA HOME Matress Quilting Cover"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/48_KENOSHA HOME TOV SPREAD.jpg" alt="48_KENOSHA HOME TOV SPREAD"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/49_KENOSHA HOME Goose Daily DUVET Light.jpg" alt="49_KENOSHA HOME Goose Daily DUVET Light"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/50_KENOSHA HOME KUNSEMULLER Premium Goose DUVET.jpg" alt="50_KENOSHA HOME KUNSEMULLER Premium Goose DUVE"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/51_KENOSHA HOME KUNSEMULLER Goose PILLOW.jpg" alt="51_KENOSHA HOME KUNSEMULLER Goose PILLOW"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/52_KENOSHA HOME Microfiber Pillow 2.jpg" alt="52_KENOSHA HOME Microfiber Pillow 2"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/53_KENOSHA HOME Refresh Cooling Pillow.jpg" alt="53_KENOSHA HOME Refresh Cooling Pillow"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/54_KENOSHA HOME Refresh Two-way Pillow.jpg" alt="54_KENOSHA HOME Refresh Two-way Pillow"></a>
+
+                        <a href="#" class="single"><img src="./images/bn/single/55_KENOSHA HOME Goose feather PILLOW.jpg" alt="55_KENOSHA HOME Goose feather PILLOW"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/56_KENOSHA HOME Pillow Waterproof Cover.jpg" alt="56_KENOSHA HOME Pillow Waterproof Cover"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/57_KENOSHA Viscospring Wonder Pillow.jpg" alt="57_KENOSHA Viscospring Wonder Pillow"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/58_KENOSHA HOME LINE STITCHED PILLOWCASE.jpg" alt="58_KENOSHA HOME LINE STITCHED PILLOWCASE"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/59_KENOSHA HOME CEDD PILLOWCASE.jpg" alt="59_KENOSHA HOME CEDD PILLOWCASE"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/60_KENOSHA HOME COLLINS PILLOWCASE.jpg" alt="60_KENOSHA HOME COLLINS PILLOWCASE"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/61_KENOSHA HOME Mattres Solid Cover.jpg" alt="61_KENOSHA HOME Mattres Solid Cover"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/62_KENOSHA HOME Mattress Waterprrof Cover.jpg" alt="62_KENOSHA HOME Mattress Waterprrof Cover"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/63_N32 Topper Mattress Waterproof Sleeve.jpg" alt="63_N32 Topper Mattress Waterproof Sleeve"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/64_N32 Topper Mattress Check Sleeve.jpg" alt="64_N32 Topper Mattress Check Sleeve"></a>
+
+                        <a href="#" class="single"><img src="./images/bn/single/65_N32 Topper Mattress Stripe Sleeve.jpg" alt="65_N32 Topper Mattress Stripe Sleeve"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/66_KENOSHA HOME DELPHIC.jpg" alt="66_KENOSHA HOME DELPHIC"></a>
+                        <a href="#" class="single"><img src="./images/bn/single/67_KENOSHA HOME ROVINA.jpg" alt="67_KENOSHA HOME ROVINA"></a>
+                    </div> <!-- all -->
+                </div> <!-- tabs-contents -->
+            </div> <!-- wrapper -->
+        </section>
+    </main>
+</body>
+</html>

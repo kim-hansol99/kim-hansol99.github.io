@@ -1,0 +1,36 @@
+@mixin li_hover_after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid $point-color;
+    z-index: 1;
+}
+
+@mixin wrapper {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    // background-color: slateblue;
+}
+
+@mixin responsive($break) {
+    @if $break == mobile-size {
+        @media screen and (min-width: $break-mobile) {
+            @content;
+        }
+    }
+    @else if $break == tablet-size {
+        @media screen and (min-width: $break-tablet) {
+            @content;
+        }
+    }
+    @else if $break == pc-size {
+        @media screen and (min-width: $break-pc) {
+            @content;
+        }
+    }
+}

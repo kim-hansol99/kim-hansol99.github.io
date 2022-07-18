@@ -1,0 +1,61 @@
+@import url('https://webfontworld.github.io/SCoreDream/SCoreDream.css');
+@import url('https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $main-font;
+    background-color: $bg-color;
+    width: $width-wide;
+    margin: 0 auto;
+}
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: $font-color;
+    &:hover {
+        color: $point-color;
+    }
+}
+ul, ol {
+    li {
+        list-style: none;
+    }
+}
+img {
+    display: block;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+span {
+    display: block;
+    font-size: 1em;
+}
+article {
+    display: block;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+body, button, input {
+    margin: 0;
+    padding: 0;
+}
+header,
+nav,
+main,
+aside,
+article,
+footer {
+    display: block;
+}

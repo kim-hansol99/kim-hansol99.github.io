@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/heritage.css">
+    <title>heritage</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/heritage.js"></script>
+    <link rel="shortcut icon" href="./images/1_favicon_icon.ico.ico">
+</head>
+<body>
+    <header>
+        <h1><a href="../../../index.html"><img src="./images/header_logo.png" alt="logo"></a></h1>
+
+        <nav>
+            <ul class="gnb">
+                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn" onclick="openMenu()"></a></li>
+            </ul>
+        </nav>
+
+        <div class="side-menu">
+            <ul class="s-menu">
+                <li><a href="../../etc/2_login_member/login_member.html">Login</a></li>
+                <li><a href="../../etc/3_Cart/cart.html"><img src="./images/cart.png" alt="cart-icon"></a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search-icon" onclick="openSearh()"></a></li>
+            </ul>
+        </div> 
+
+        <div class="menu-sub" id="menu-sub">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            
+            <ul class="myMenu">
+                <li class="menu-top">
+                    <a href="../../etc/2_login_member/login_member.html">로그인</a>
+                    <a href="../../etc/3_Cart/cart.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="#" class="sub-menu1">Product</a>
+                    <ul class="sub-menu-des1">
+                        <li><a href="../../product_bed/product_bed.html">Bed</a></li>
+                        <li><a href="../../product_bedding/product_bedding.html">Bedding</a></li>
+                        <li><a href="../../product_furniture/product_furniture.html">Furniture</a></li>
+                        <li><a href="../../product_roomset/product_roomset.html">RoomSet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="sub-menu2">Brand</a>
+                    <ul class="sub-menu-des2">
+                        <li><a href="../../brand/the_black/the_black.html">the Black</a></li>
+                        <li><a href="../../brand/heritage/heritage.html">heritage</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../../community/community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <div id="search-sub" class="search-sub">
+            <span class="closebtn" onclick="closeSearch()">×</span>
+
+            <div class="search-sub-content">
+                <form action="#">
+                    <input type="text" placeholder="검색어를 입력하세요!" name="search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="title_se">
+            <div class="title">
+                <div class="wrapper">
+                    <h1>The History of SIMMONS Signifies <br>
+                        The History of All Beds</h1>
+                </div>  <!-- wrapper -->
+            </div>  <!-- title -->
+        </section>
+
+        <section id="heritage">
+            <div class="wrapper">
+                <h1>역사</h1>
+                <div class="br"></div>
+                <div class="heritage_box">
+                    <div class="h_70">
+                        <img src="./images/history_img1.jpg" alt="history_img1">
+                        <img src="./images/conn.png" alt="conn" class="con_01">
+                        <div class="text_70">
+                            <h2>1870</h2>
+                            <P class="sub">젤몬 시몬스(Zalmon G. Simmons)의 도전</P>
+                            <p>
+                                시몬스의 창업자 젤몬 시몬스는 미국 위스콘신 주 케노샤에서 9명의 엔지니어와 함께 침대사업을 시작했습니다.
+                            </p>
+                        </div> <!-- text_70 -->
+                    </div> <!-- h_70 -->
+
+                    <div class="h_76">
+                        <img src="./images/conn.png" alt="conn" class="con_02">
+                        <div class="text_76">
+                            <h2>1876</h2>
+                            <P class="sub">대량 생산 시스템으로 침대의 대중 보급 시작</P>
+                            <p>
+                                스프링 제조 기계 특허권을 기반으로 제조 공정의 혁신을 일으키며 높은 퀄리티의 매트리스를 대량으로 생산할 수 있게 됐습니다. 이러한 혁신적인 제조 공정 도입은 보다 많은 사람들이 편안한 수면을 할 수 있게 됐습니다.
+                            </p>
+                        </div> <!-- text_76 -->
+                    </div> <!-- h_76 -->
+
+                    <div class="h_25">
+                        <img src="./images/history_img2.jpg" alt="history_img2">
+                        <img src="./images/conn.png" alt="conn" class="con_03">
+                        <div class="text_25">
+                            <h2>1925</h2>
+                            <P class="sub">세계 최초 포켓스프링 제조 기계 특허 취득, Beautyrest의 탄생</P>
+                            <p>
+                                미국 최고의 엔지니어 존 프랭클린 게일(John Franklin Gail)은 독자적인 포켓스프링 제조 기계를 발명했습니다 <br> 이를 바탕으로 세계 최초로 특허를 취득하여 침대 산업 역사에 한 획을 그었으며, 특허 취득에 멈추지 않고 숙면에 대한 끊임없는 연구를 통해 침대 역사상 가장 유명한 뷰티레스트(Beautyrest)를 탄생시켰습니다.
+                            </p>
+                        </div> <!-- text_25 -->
+                    </div> <!-- h_25 -->
+    
+                    <div class="h_27">
+                        <div class="img_27">
+                            <img onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)" src="./images/history_paper1_on.jpg" alt="history_paper1_on" class="ta">
+                            <img onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)" src="./images/history_paper2_on.jpg" alt="history_paper2_on" class="ta">
+                            <img onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)" src="./images/history_paper3_on.jpg" alt="history_paper3_on" class="ta">
+                            <img onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)" src="./images/history_paper4_on.jpg" alt="history_paper4_on" class="ta">
+                            <img onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)" src="./images/history_paper5_on.jpg" alt="history_paper5_on" class="ta">
+                        </div> <!-- img_27 -->
+                        <img src="./images/conn.png" alt="conn" class="con_04">
+                        <div class="text_27">
+                            <h2>1927</h2>
+                            <P class="sub">시대를 대변하는 유명 인사들의 추천서가 담긴 광고 게재</P>
+                        </div> <!-- text_27 -->
+                    </div> <!-- h_27 -->
+    
+                    <div class="h_31">
+                        <div class="img_31">
+                            <img onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)" src="./images/history_img3.jpg" alt="history_img3">
+                        </div> <!-- img_31 -->
+                        <img src="./images/conn.png" alt="conn" class="con_05">
+                        <div class="text_31">
+                            <h2>1931</h2>
+                            <P class="sub">수면과학 기초를 형성한 Sleep Research의 시작</P>
+                            <p>
+                                미국 오하이오 주립대학의 심리학 교수인 해리 M. 존슨 박사와 함께 수면 중 뒤척임의 횟수와 수면 패턴 등을 연구하여 오늘날 수면 과학의 기초를 형성했습니다 <br> 영화 촬영용 카메라와 기록장치를 사용한 해당 연구를 통해 평균 8시간 수면 중 35회 이상의 뒤척임을 발견했으며, 수면 중 자세를 바꾸는 것이 생리학적으로 매우 중요하다는 것을 밝혀냈습니다
+                            </p> 
+                        </div> <!-- text_31 -->
+                    </div> <!-- h_31 -->
+    
+                    <div class="h_58-970">
+                        <div class="h_58">
+                            <img src="./images/history_img4_1.png" alt="history_img4_1">
+                            <img src="./images/conn.png" alt="conn" class="con_06">
+                            <div class="text_58-970">
+                                <h2>1958</h2>
+                                <P class="sub">세계 최초 퀸 사이즈, 킹 사이즈 매트리스 출시</P>
+                                <p>
+                                    당대 최고의 잡지인 라이프 매거진을 비롯한 각종 간행물에 소개됐습니다.
+                                </p>
+                            </div> <!-- text_58-970 -->
+                        </div> <!-- h_58 -->
+                        
+                        <div class="h_970">
+                            <img src="./images/history_img4_2.png" alt="history_img4_2">
+                            <img src="./images/conn.png" alt="conn" class="con_07">
+                            <div class="text_58-970">
+                                <h2>1970</h2>
+                                <P class="sub">브랜드의 혁신 정신을 담아낸 크리에이티브 광고 진행</P>
+                                <p>
+                                    유니크하고 혁신적인 크리에이티브 캠페인을 기획∙집행하여 광고계에 커다란 반향을 일으켰습니다.
+                                </p>
+                            </div> <!-- text_58-970 -->
+                        </div> <!-- h_970 -->
+                    </div> <!-- h_58-970 -->
+    
+                    <div class="h_92-93-95">
+                        <div class="h_92">
+                            <img src="./images/history_img6_1.png" alt="history_img6_1">
+                            <img src="./images/conn.png" alt="conn" class="con_08">
+                            <div class="text_92-93-95">
+                                <h2>1992</h2>
+                                <P class="sub">국내 프리미엄 침대 시장의 절대적인 리더, 시몬스 한국 법인 설립(SIMMONS Korea)</P>
+                                <p>
+                                    체계화된 한국 시몬스만의 수준 높은 기술력과 엄격한 품질 관리의 명성이 시작된 기념비적인 해입니다. '기본에 충실하자'라는 경영 철학의 원칙을 바탕으로 고객의 건강한 수면 환경을 위한 지속적인 수면 연구와 제품 개발을 이어가고 있습니다.
+                                </p>
+                            </div> <!-- text_92-93-9 -->
+                        </div> <!-- h_92 -->
+    
+                        <div class="h_93">
+                            <img src="./images/history_img6_2.png" alt="history_img6_2.png">
+                            <img src="./images/conn.png" alt="conn" class="con_09">
+                            <div class="text_92-93-95">
+                                <h2>1993</h2>
+                                <P class="sub">한국 시몬스, 상표권 공식 이전 완료</P>
+                                <p>
+                                    글로벌 침대 시장에서도 최고로 인정받는 '국내 자체 생산 시스템'과 '한국 시몬스만의 1,936가지 품질 관리 항목'을 통해 더욱 완벽한 제품을 만들어 나가고 있습니다.
+                                </p>
+                            </div> <!-- h_93 -->
+                        </div> <!-- 1993 -->
+    
+                        <div class="h_95">
+                            <iframe src="https://www.youtube.com/embed/thI7wTas0ss?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <img src="./images/conn.png" alt="conn" class="con_10">
+                            <div class="text_92-93-95">
+                                <h2>1995</h2>
+                                <P class="sub">'흔들리지 않는 편안함'을 각인시킨 TV광고 '볼링공 실험'편</P>
+                                <p>
+                                    볼링 공과 볼링 핀을 활용해 개별 독립되어 있는 포켓스프링의 역할과 장점을 그대로 보여줄 수 있는 광고를 선보였습니다. 이를 통해 포켓스프링의 흔들리지 않는 편안함을 증명함은 물론, 광고 역사에 길이 남는 발자취를 남겼습니다.
+                                </p>
+                            </div> <!-- text_92-93-9 -->
+                        </div> <!-- h_95 -->
+                    </div> <!-- h_92-93-95 -->
+    
+                    <div class="h_99">
+                        <img src="./images/history_img7.jpg" alt="history_img7">
+                        <img src="./images/conn.png" alt="conn" class="con_11">
+                        <div class="text_99">
+                            <h2>1999</h2>
+                            <P class="sub">헤븐리 베드를 시작으로 프리미엄 매트리스 선두 장악</P>
+                            <p>
+                                세계적인 호텔 브랜드 웨스틴 호텔과 1999년에 처음으로 공동 개발한 ‘헤븐리 베드(Heavenly Bed)’를 시작으로 프리미엄 매트리스 시장의 선두주자로 다시 한 번 나서게 된 기념비적인 해입니다
+                            </p>
+                        </div> <!-- text_99 -->
+                    </div> <!-- h_99 -->
+    
+                    <div class="h_07">
+                        <img src="./images/history_img8.jpg" alt="history_img8">
+                        <img src="./images/conn.png" alt="conn" class="con_12">
+                        <div class="text_07">
+                            <h2>2007</h2>
+                            <P class="sub">한국 시몬스 자체 ‘수면연구 R&D센터’ 개관</P>
+                            <p>
+                                한국 시몬스 자체 ‘수면연구 R&D센터’ 개관 한국 시몬스의 ‘수면연구 R&D센터’는 한국인의 체형과 수면 습관 및 라이프스타일에 적합한 제품 개발을 위해 끊임없는 연구를 진행 중입니다 이를 통해 60여 종에 이르는 다양한 제품을 선보여 각기 다른 체형과 수면 습관을 지닌 고객 개개인에게 맞춤형에 준하는 만족감을 제공하고 있습니다
+                            </p>
+                        </div> <!-- text_07 -->
+                    </div> <!-- h_07 -->
+                    
+                    <div class="h_18">
+                        <div class="text_18">
+                            <h2>2018</h2>
+                        </div> <!-- text_18 -->
+                        <img src="./images/conn.png" alt="conn" class="con_13">
+                        <div class="factorium">
+                            <img src="./images/history_img5.jpg" alt="history_img5">
+                            <div class="text_18">
+                                <P class="sub">시몬스 헤리티지가 이어지는 시몬스의 심장이자 정신 시몬스 팩토리움(SIMMONS Factorium) 완공</P>
+                                <p>
+                                    1870년 시작된 시몬스의 한 세기 반 역사를 이제 한국 시몬스가 이어받아 새로운 역사를 써가고 있습니다 <br> 시몬스 팩토리움은 세계적으로 인정받은 매트리스 자체 생산 시스템과 세계 최고 설비를 자랑하는 수면연구 R&D센터 등이 자리한 한국 시몬스의 심장입니다 시몬스 팩토리움에서 제작된 모든 매트리스는 친환경 인증을 획득하는 등 기본을 지켜내는 고집으로 흔들리지 않는 편안함을 약속합니다
+                                </p>
+                            </div> <!-- text_18 -->
+                        </div> <!-- factorium -->
+                        
+                        <div class="terrace">
+                            <img src="./images/history_img9.png" alt="history_img9">
+                            <div class="text_18">
+                                <P class="sub"> 공간으로 소통하는 소셜 스페이스(Social Space) 시몬스 테라스(SIMMONS Terrace) 개관</P>
+                                <p>
+                                    라이프스타일을 변화시킬 다양한 경험과 브랜드 취향이 반영된 ‘소셜 스페이스(Social Space)’인 시몬스 테라스에서는 입체적이고 감각적인 공간을 통해 한국 시몬스의 철학과 숙면에 대한 고민 등을 엿볼 수 있습니다 시몬스 테라스는 수면 전문 브랜드 시몬스 침대만의 차별화된 복합문화공간이자 라이프스타일 쇼룸입니다 <br> 자연과 휴식의 의미를 담은 공간에서 브랜드 스토리, 제품, 문화 행사 등을 체험할 수 있도록 구성한 열린 공간입니다 오픈과 동시에 이천의 대표 명소로 자리 매김 하며 지역 사회에도 활기를 불어넣고 있습니다
+                                </p>
+                            </div> <!-- text_18 -->
+                        </div> <!-- terrace -->
+                        
+                        <div class="safety_first">
+                            <img src="./images/history_img10.png" alt="history_img10">
+                            <div class="text_18">
+                                <P class="sub"> 국내 최초, 국내 유일 난연 매트리스 개발</P>
+                                <p>
+                                    한국 시몬스는 한국화재보험협회 부설 방재시험연구원과 함께 국제표준화기구 ISO 및 국내 KS 화재안전 표준을 바탕으로 국내 최초, 국내 유일 국제표준(ISO 12949)과 국내 표준시험방법(KS F ISO 12949)을 모두 만족시키는 난연 매트리스를 개발했습니다. (2019년 3월 기준)
+                                </p>
+                            </div> <!-- text_18 -->
+                        </div> <!-- safety_first -->
+                    </div> <!-- h_18 -->    
+                </div> <!-- heritage_box -->
+            </div> <!-- wrapper -->
+        </section>
+
+        <section id="philosophy">
+            <div class="wrapper">
+                <div class="phil_title">
+                    <h1>philosophy</h1>
+                </div> <!-- phil_title -->
+                <div class="phil_flex">
+                    <div class="comfort">
+                        <div class="phil_txt">
+                            <h2>Comfort</h2>
+                            <p>
+                                편안함의 원칙을 지켜나갑니다
+                            </p>
+                        </div> <!-- phil_txt -->
+                    </div> <!-- comfort -->
+
+                    <div class="eco-friendly">
+                        <div class="phil_txt">
+                            <h2>Eco-friendly</h2>
+                            <p>
+                                다음 세대를 생각합니다
+                            </p>
+                        </div> <!-- phil_txt -->
+                    </div> <!-- eco-friendly -->
+
+                    <div class="s_c">
+                        <div class="phil_txt">
+                            <h2>Science & <br> Craftsmanship</h2>
+                            <p>
+                                품질에 대한 고집으로 기본 원칙을 지킵니다
+                            </p>
+                        </div> <!-- phil_txt -->
+                    </div> <!-- s_c -->
+
+                    <div class="life">
+                        <div class="phil_txt">
+                            <h2>Life</h2>
+                            <p>
+                                침대를 넘어 인생을 만듭니다
+                            </p>
+                        </div> <!-- phil_txt -->
+                    </div> <!-- life -->
+                </div> <!-- phil_flex -->
+            </div> <!-- wrapper -->
+        </section>
+    </main>
+</body>
+</html>

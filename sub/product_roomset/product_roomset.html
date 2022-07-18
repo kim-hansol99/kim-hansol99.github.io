@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/product_roomset.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/product_roomset.js"></script>
+    <link rel="shortcut icon" href="./images/1_favicon_icon.ico.ico">
+    <title>Product</title>
+</head>
+<body>
+    <header>
+        <h1><a href="../../index.html"><img src="./images/header_logo.png" alt="logo"></a></h1>
+
+        <nav>
+            <ul class="gnb">
+                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn" onclick="openMenu()"></a></li>
+            </ul>
+        </nav>
+
+        <div class="side-menu">
+            <ul class="s-menu">
+                <li><a href="../etc/2_login_member/login_member.html">Login</a></li>
+                <li><a href="../etc/3_Cart/cart.html"><img src="./images/cart.png" alt="cart-icon"></a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search-icon" onclick="openSearh()"></a></li>
+            </ul>
+        </div> 
+
+        <div class="menu-sub" id="menu-sub">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            
+            <ul class="myMenu">
+                <li class="menu-top">
+                    <a href="../etc/2_login_member/login_member.html">로그인</a>
+                    <a href="../etc/3_Cart/cart.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="#" class="sub-menu1">Product</a>
+                    <ul class="sub-menu-des1">
+                        <li><a href="../product_bed/product_bed.html">Bed</a></li>
+                        <li><a href="../product_bedding/product_bedding.html">Bedding</a></li>
+                        <li><a href="../product_furniture/product_furniture.html">Furniture</a></li>
+                        <li><a href="../product_roomset/product_roomset.html">RoomSet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="sub-menu2">Brand</a>
+                    <ul class="sub-menu-des2">
+                        <li><a href="../brand/the_black/the_black.html">the Black</a></li>
+                        <li><a href="../brand/heritage/heritage.html">heritage</a></li>
+                    </ul>
+                </li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../community/community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <div id="search-sub" class="search-sub">
+            <span class="closebtn" onclick="closeSearch()">×</span>
+
+            <div class="search-sub-content">
+                <form action="#">
+                    <input type="text" placeholder="검색어를 입력하세요!" name="search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrapper">
+                <h1>ROOM SET</h1>
+                <div class="tabs-menu">
+                    <ul class="tabs">
+                        <li class="tab_item"><a href="#all">ALL</a></li>
+                        <li class="tab_item"><a href="#stable">Table</a></li>
+                        <li class="tab_item"><a href="#closet">Closet</a></li>
+                        <li class="tab_item"><a href="#Mirror">Mirror</a></li>
+                        <li class="tab_item"><a href="#others">Others</a></li>
+                    </ul>
+                </div> <!-- tabs-menu -->
+
+                <div class="filter-menu">
+                    <select name="sale" id="sale">
+                        <option value="all_sale">판매처</option>
+                        <option value="directly">직영</option>
+                        <option value="online">온라인</option>
+                        <option value="outlet">아울렛</option>
+                    </select>
+                </div> <!-- filter-menu -->
+
+                <div class="tabs-contents">
+                    <div class="all">
+                        <a href="../product_furniture/sub/table/table.html" class="others"><img src="./images/1_pd.jpg" alt="Catol"></a>
+                        <a href="../product_furniture/sub/table/table.html" class="closet"><img src="./images/2_pd.jpg" alt="Beautyrest Musk"></a>
+                        <a href="../product_furniture/sub/table/table.html" class="closet"><img src="./images/3_pd.jpg" alt="Beautyrest Fusion"></a>
+                        <a href="../product_furniture/sub/table/table.html" class="closet"><img src="./images/4_pd.jpg" alt="Beautyrest Raven"></a>
+                        <a href="../product_furniture/sub/table/table.html" class="sofa"><img src="./images/5_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="sofa"><img src="./images/6_pd.jpg" alt="Beautyrest Foundation"></a>
+                        <a href="#" class="sofa"><img src="./images/7_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="sofa"><img src="./images/8_pd.jpg" alt="Beautyrest Foundation"></a>
+                        <a href="#" class="table"><img src="./images/9_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="closet"><img src="./images/10_pd.jpg" alt="Beautyrest Foundation"></a>
+                        <a href="#" class="closet"><img src="./images/11_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/12_pd.jpg" alt="Beautyrest Foundation"></a>
+                        <a href="#" class="table"><img src="./images/13_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/14_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/15_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/16_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/17_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/18_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/19_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/20_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/21_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/22_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/23_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/24_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/25_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/26_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/27_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/28_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/29_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="table"><img src="./images/30_pd.jpg" alt="Beautyrest Premium Foundation"></a>
+                    </div> <!-- all -->
+                </div> <!-- tabs-contents -->
+            </div> <!-- wrapper -->
+        </section>
+    </main>
+</body>
+</html>

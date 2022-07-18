@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 201.26 65.2" style="enable-background:new 0 0 201.26 65.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#A5A4A4;stroke-miterlimit:10;}
+	.st1{fill:#A5A4A4;}
+	.st2{font-family:'MyriadPro-Regular';}
+	.st3{font-size:12px;}
+</style>
+<line class="st0" x1="0" y1="45.88" x2="183.25" y2="45.88"/>
+<line class="st0" x1="0" y1="34.75" x2="100.63" y2="34.75"/>
+<line class="st0" x1="100.63" y1="6.25" x2="100.63" y2="34.75"/>
+<polyline class="st0" points="93.38,12.75 100.63,5.5 107.88,12.75 "/>
+<polyline class="st0" points="176,38.63 183.25,45.88 176,53.12 "/>
+<text transform="matrix(1 0 0 1 5.5 32.5984)" class="st1 st2 st3">No</text>
+<text transform="matrix(1 0 0 1 5.5 57)" class="st1 st2 st3">Yes</text>
+</svg>

@@ -1,0 +1,33 @@
+@mixin title_p($title_P_size:14px) {
+    line-height: 1.5;
+    font-size: $title_P_size;
+    // tablet에서 20px
+    font-weight: 500;
+    color: #999;
+}
+
+@mixin p_des($p_des_size:14px) {
+    line-height: 1.5;
+    font-size: $p_des_size;
+    // tablet에서 18px
+    margin: auto;
+    color: #999;
+}
+
+@mixin responsive($break) {
+    @if $break == mobile-size {
+        @media screen and (min-width: $break-mobile) {
+            @content;
+        }
+    }
+    @else if $break == tablet-size {
+        @media screen and (min-width: $break-tablet) {
+            @content;
+        }
+    }
+    @else if $break == pc-size {
+        @media screen and (min-width: $break-pc) {
+            @content;
+        }
+    }
+}

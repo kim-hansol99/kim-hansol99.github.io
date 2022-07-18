@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMMUNITY</title>
+    <link rel="stylesheet" href="./css/community.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/community.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/a_tab.js"></script>
+    <!-- <script src="./js/b_tab.js"></script> -->
+    <script src="./js/buttonAction1.js"></script>
+    <link rel="shortcut icon" href="./images/1_favicon_icon.ico.ico">
+    <!-- <script src="./js/buttonaction2.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <h1><a href="../../index.html"><img src="./images/header_logo.png" alt="logo"></a></h1>
+
+        <nav>
+            <ul class="gnb">
+                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn" onclick="openMenu()"></a></li>
+            </ul>
+        </nav>
+
+        <div class="side-menu">
+            <ul class="s-menu">
+                <li><a href="../etc/2_login_member/login_member.html">Login</a></li>
+                <li><a href="../etc/3_Cart/cart.html"><img src="./images/cart.png" alt="cart-icon"></a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search-icon" onclick="openSearh()"></a></li>
+            </ul>
+        </div> 
+
+        <div class="menu-sub" id="menu-sub">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            
+            <ul class="myMenu">
+                <li class="menu-top">
+                    <a href="../etc/2_login_member/login_member.html">로그인</a>
+                    <a href="../etc/3_Cart/cart.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="#" class="sub-menu1">Product</a>
+                    <ul class="sub-menu-des1">
+                        <li><a href="../product_bed/product_bed.html">Bed</a></li>
+                        <li><a href="../product_bedding/product_bedding.html">Bedding</a></li>
+                        <li><a href="../product_furniture/product_furniture.html">Furniture</a></li>
+                        <li><a href="../product_roomset/product_roomset.html">RoomSet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="sub-menu2">Brand</a>
+                    <ul class="sub-menu-des2">
+                        <li><a href="../brand/the_black/the_black.html">the Black</a></li>
+                        <li><a href="../brand/heritage/heritage.html">heritage</a></li>
+                    </ul>
+                </li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../community/community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <div id="search-sub" class="search-sub">
+            <span class="closebtn" onclick="closeSearch()">×</span>
+
+            <div class="search-sub-content">
+                <form action="#">
+                    <input type="text" placeholder="검색어를 입력하세요!" name="search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>COMMUNITY</h1>
+        <div class="warrper">
+            <div class="commu-btn">
+                <ul>
+                    <li id="faqBtn" class="mouseon">FAQ</li>
+                    <li id="qnaBtn">Q&A</li>
+                    <li id="telBtn">1:1 전화상담 신청</li>
+                    <li id="aspBtn">A/S 신청</li>
+                    <li id="noticeBtn">공지사항</li>
+                    
+                </ul>
+
+            </div>
+            <div class="fake-width">.</div>
+            <div class="commu-main">
+                <section id="faq">
+                    <div class="faq-btn">
+                        <ul>
+                            <li class="mouseover list" id="faqMem">회원</li>
+                            <li class="list" id="faqPrd">상품문의</li>
+                            <li class="list" id="faqRe">환불/반품</li>
+                            <li class="list" id="faqAs">A/S품질보증</li>
+                            <li class="list" id="faqSell">주문/배송</li>
+                            <li class="list" id="faqOther">기타</li>
+                        </ul>   
+                        <fieldset>
+                            <select id="faq-small-btn" name="faq-small-btn">
+                                <option value="회원">회원</option>
+                                <option value="상품문의">상품문의</option>
+                                <option value="교환/환불/반품">교환/환불/반품</option>
+                                <option value="A/S품질보증">A/S품질보증</option>
+                                <option value="주문/배송">주문/배송</option>
+                                <option value="기타">기타</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div id="faq-member" class="atab">
+                        <div class="search-box1-1">
+                            <input type="text" id="keyword" name="keyword" placeholder="검색어를 입력하세요" onkeypress="if (event.keyCode == 13) { search(); event.returnValue = false }"><label for="keyword">검색어 입력</label>
+                            <a href="javascript:search();">검색</a>
+                        </div>
+                        <hr class="first-hr">
+                        <div>
+                            <div class="atabBtn">
+                                <h2>Q. 회원 정보를 변경하고 싶습니다. 어떻게 해야 하나요?</h2>
+                                <img src="./images/under-arrow.svg" style="width:1.5em;" alt="under-arrow">
+                                <img src="./images/top-arrow.svg" style="width: 1.5em;" alt="top-arrow">
+                            </div>
+                            <p id="tabP">
+                                A.로그인 하신 후 마이페이지의 ‘회원정보 수정’ 메뉴에서 고객님의 회원 정보를 변경할 수 있습니다. 회원정보는 언제든지 수정 가능하며 수정된 사항은 즉시 반영됩니다.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="atabBtn">
+                                <h2>Q. 아이디와 비밀번호를 분실했습니다. 어떻게 확인할 수 있나요?</h2>
+                                <img src="./images/under-arrow.svg" style="width:1.5em;" alt="under-arrow">
+                                <img src="./images/top-arrow.svg" style="width: 1.5em;" alt="top-arrow">
+                            </div>
+                            <p id="tabP">
+                                A.회원 아이디와 비밀번호를 분실하셨을 경우 시몬스 로그인 페이지에 있는 아이디찾기와 비밀번호찾기를 통해 확인할 수 있습니다. <br>
+                                ▶ 아이디찾기는 회원님의 이름과 가입 시 기재한 이메일 주소 입력을 통해 확인 가능합니다. 이름 및 이메일 주소 입력 시 개인정보 보호를 위해 아이디 2자리는 마스킹(*) 처리 되어 보여집니다. 추가로 아이디 모두를 확인하시려면 ‘아이디 모두 확인’ 버튼 클릭을 통해 전송 받으실 수단(휴대폰 또는 이메일)을 선택하시어 확인하시면 됩니다.<br>
+                                ▶ 비밀번호찾기는 본인인증(휴대폰인증과 아이핀인증)을 통해 확인이 가능합니다. 본인 명의의 휴대폰 및 아이핀을 통해서만 이용할 수 있습니다.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="atabBtn">
+                                <h2>Q. 비밀번호 변경은 어떻게 하나요?</h2>
+                                <img src="./images/under-arrow.svg" style="width:1.5em;" alt="under-arrow">
+                                <img src="./images/top-arrow.svg" style="width: 1.5em;" alt="top-arrow">
+                            </div>
+                            <p id="tabP">
+                                A.로그인 하신 후 MYPAGE의 ‘회원정보 수정’ 메뉴에서 비밀번호를 변경할 수 있습니다. 비밀번호는 개인정보 보호를 위해 공백없이 영문, 숫사, 특수문자 조합 6~20자까지 사용 가능합니다.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="atabBtn">
+                                <h2>Q. 회원탈퇴는 어떻게 하나요?</h2>
+                                <img src="./images/under-arrow.svg" style="width:1.5em;" alt="under-arrow">
+                                <img src="./images/top-arrow.svg" style="width: 1.5em;" alt="top-arrow">
+                            </div>
+                            <p id="tabP">
+                                A.로그인 하신 후 마이페이지의 ‘회원정보 수정’ 메뉴에서 ‘회원 탈퇴를 원하시나요?’ 를 클릭을 통해 탈퇴가 가능합니다.<br>
+                                ※ 시몬스 회원 탈퇴를 하시면 회원정보 및 마일리지, 구매내역이 삭제됩니다. 또한 회원탈퇴 후 재가입 시 신규가입회원 혜택은 받을 수 없습니다.
+                            </p>
+                        </div>
+                        <hr class="last-hr">
+
+                        <div class="search-box1-2">
+                            <input type="text" id="keyword" name="keyword" placeholder="검색어를 입력하세요" onkeypress="if (event.keyCode == 13) { search(); event.returnValue = false }"><label for="keyword">검색어 입력</label>
+                            <a href="javascript:search();">검색</a>
+                        </div>
+                    </div>
+                    
+
+                    <div id="faq-product" class="atab">
+                        <div class="search-box1-1">
+                            <input type="text" id="keyword" name="keyword" placeholder="검색어를 입력하세요" onkeypress="if (event.keyCode == 13) { search(); event.returnValue = false }"><label for="keyword">검색어 입력</label>
+                            <a href="javascript:search();">검색</a>
+                        </div>
+                        <hr class="first-hr">
+                        <div>
+                            <div class="atabBtn">
+                                <h2>Q. 회원 정보를 변경하고 싶습니다. 어떻게 해야 하나요?</h2>
+                                <img src="./images/under-arrow.svg" style="width:1.5em;" alt="under-arrow">
+                                <img src="./images/top-arrow.svg" style="width: 1.5em;" alt="top-arrow">
+                            </div>
+                            <p id="tabP">
+                                A.로그인 하신 후 마이페이지의 ‘회원정보 수정’ 메뉴에서 고객님의 회원 정보를 변경할 수 있습니다. 회원정보는 언제든지 수정 가능하며 수정된 사항은 즉시 반영됩니다.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="atabBtn">
+                                <h2>Q. 아이디와 비밀번호를 분실했습니다. 어떻게 확인할 수 있나요?</h2>
+                                <img src="./images/under-arrow.svg" style="width:1.5em;" alt="under-arrow">
+                                <img src="./images/top-arrow.svg" style="width: 1.5em;" alt="top-arrow">
+                            </div>
+                            <p id="tabP">
+                                A.회원 아이디와 비밀번호를 분실하셨을 경우 시몬스 로그인 페이지에 있는 아이디찾기와 비밀번호찾기를 통해 확인할 수 있습니다. <br>
+                                ▶ 아이디찾기는 회원님의 이름과 가입 시 기재한 이메일 주소 입력을 통해 확인 가능합니다. 이름 및 이메일 주소 입력 시 개인정보 보호를 위해 아이디 2자리는 마스킹(*) 처리 되어 보여집니다. 추가로 아이디 모두를 확인하시려면 ‘아이디 모두 확인’ 버튼 클릭을 통해 전송 받으실 수단(휴대폰 또는 이메일)을 선택하시어 확인하시면 됩니다.<br>
+                                ▶ 비밀번호찾기는 본인인증(휴대폰인증과 아이핀인증)을 통해 확인이 가능합니다. 본인 명의의 휴대폰 및 아이핀을 통해서만 이용할 수 있습니다.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="atabBtn">
+                                <h2>Q. 비밀번호 변경은 어떻게 하나요?</h2>
+                                <img src="./images/under-arrow.svg" style="width:1.5em;" alt="under-arrow">
+                                <img src="./images/top-arrow.svg" style="width: 1.5em;" alt="top-arrow">
+                            </div>
+                            <p id="tabP">
+                                A.로그인 하신 후 MYPAGE의 ‘회원정보 수정’ 메뉴에서 비밀번호를 변경할 수 있습니다. 비밀번호는 개인정보 보호를 위해 공백없이 영문, 숫사, 특수문자 조합 6~20자까지 사용 가능합니다.
+                            </p>
+                        </div>
+                        <hr class="last-hr">
+
+                        <div class="search-box1-2">
+                            <input type="text" id="keyword" name="keyword" placeholder="검색어를 입력하세요" onkeypress="if (event.keyCode == 13) { search(); event.returnValue = false }"><label for="keyword">검색어 입력</label>
+                            <a href="javascript:search();">검색</a>
+                        </div>
+                    </div>
+
+                    <div id="faq-re">3</div>
+                    <div id="faq-as">4</div>
+                    <div id="faq-sell">5</div>
+                    <div id="faq-other">6</div>
+
+                </section><!--faq-->
+
+                <section id="qna">
+                    <hr>
+                    <p>문의 내용이 없습니다.</p>
+                    <hr>
+                    <div>
+                        <a href="#">문의하기</a><!--버튼-->
+                    </div>
+                </section><!--qna-->
+
+                <section id="telph">
+                    
+                        <fieldset>
+                            <legend>개인정보수집 및 이용동의</legend>
+                            <h3>개인정보수집 및 이용동의</h3>
+                            <div>
+                                <p>개인정보 동의 관련</p>
+                            </div>
+                            <p class="small-checker">
+                                <span>위의 개인정보취급방침에 동의하십니까?(필수)</span>
+                                <input type="checkbox" id="check1" class="checkbox"><label for="check1" class="checkbox"></label>
+                            </p>
+                        </fieldset>
+                       <fieldset>
+                            <legend>마케팅 및  광고에 활용</legend>
+                            <h3>마케팅 및  광고에 활용</h3>
+                            <div>
+                                <p>동의 관련</p>
+                            </div>
+                            <p class="small-checker">
+                                <span>위의 마케팅 및 광고 활용 이용에 동의하십니까?(선택)</span>
+                                <input type="checkbox" id="check2" class="checkbox" name="mkt_agree"><label for="check2" class="checkbox"></label>
+                            </p>
+                            <div style="margin: 40px 0;">
+                                <p>※귀하는 개인정보 수집·이용에 동의하지 않을 권리가 있으며, 동의를 거부할 경우에는 회원가입을 통한 상품 구매, 고객상담, 이벤트 참여기회 제공 등 사이트 서비스 이용에 제한될 수 있습니다.</p>
+                             </div>
+                        </fieldset>
+
+                    <div class="mem-join">
+                        <div>
+                            <h3>신청서 작성</h3>
+                            <p>* 항목은 필수 입력해주세요</p>
+                        </div>
+                        <fieldset>
+                            <legend>회원 가입 정보 입력</legend>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>이름 *</li>
+                                        <li><input type="text" name="user_nm" id="user_nm"><label for="user_nm">이름 입력</label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>제목 *</li>
+                                        <li class="sub"><input type="text" name="title" id="title"><label for="title">제목 입력</label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>연락처 *</li>
+                                        <li class="phone">
+                                            <input type="text" name="tel1" id="tel1" class="numchk" value=""><label for="hp1">연락처 첫 자리 입력</label>
+                                            <span>-</span>
+                                            <input type="text" name="tel2" id="tel2" class="numchk" value=""><label for="hp2">연락처 중간 자리 입력</label>
+                                            <span>-</span>
+                                            <input type="text" name="tel3" id="tel3" class="numchk" value=""><label for="hp3">연락처 끝 자리 입력</label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>통화가능시간 *</li>
+                                        <li>
+                                            <input type="text" name="call_time" id="call_time" maxlength="30" placeholder="예) 오후 1시"><label for="call_time">통화가능시간입력</label>
+                                            <span class="guide">* 평일 9시-17시 / 토요일.일요일.공휴일 휴무</span>
+                                            
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>거주지역 *</li>
+                                        <li class="area">
+                                            <select id="area" name="area">
+                                                <option value="">지역을 선택하세요</option>
+                                                <option value="서울">서울</option>
+                                                <option value="인천">인천</option>
+                                                <option value="경기">경기</option>
+                                                <option value="강원">강원</option>
+                                                <option value="충남">충남</option>
+                                                <option value="충북">충북</option>
+                                                <option value="대전">대전</option>
+                                                <option value="대구">대구</option>
+                                                <option value="경북">경북</option>
+                                                <option value="울산">울산</option>
+                                                <option value="부산">부산</option>
+                                                <option value="경남">경남</option>
+                                                <option value="전북">전북</option>
+                                                <option value="광주">광주</option>
+                                                <option value="전남">전남</option>
+                                                <option value="제주">제주</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li>
+                                    <ul>
+                                        <li>이메일 *</li>
+                                        <li class="email">
+                                            <input type="text" id="email1" name="email1" maxlength="20" value=""><label for="email1">직접 입력</label>
+                                            <span>@</span>
+                                            <input type="text" id="email2" name="email2" maxlength="20" value=""><label for="email2">직접 입력</label>
+                                            <span style="font-size: 0;">.</span>
+                                            <select id="sel_email">
+                                                <option value="">직접 입력</option>
+                                                    <option value="naver.com">naver.com</option>
+                                                    <option value="hanmail.net">hanmail.net</option>
+                                                    <option value="hotmail.com">hotmail.com</option>
+                                                    <option value="nate.com">nate.com</option>
+                                                    <option value="gmail.com">gmail.com</option>
+                                                    <option value="daum.net">daum.net</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>상세내용 *</li>
+                                        <li class="detail">
+                                            <textarea id="txt_content" name="content" maxlength="4000" style="resize:none;"></textarea>
+                                            <p>0 / 4000자</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a href="javascript:submit();" class="btnReq">신청 하기</a>
+                        </fieldset>
+                    </div>
+                </section><!--tel-->
+
+                <section id="asp">
+                    <div class="as-pro">
+                        <h3>A/S 처리 흐름도</h3>
+                        <ul>
+                            <li><span>01. A/S 접수</span></li>
+                            <li><span>02. 고객카드 작성</span></li>
+                            <li><span>03. A/S 담당 통보</span></li>
+                            <li><span>04. 방문 일정 조정</span></li>
+                            <li><span>05. A/S 일정 회의</span></li>
+                            <li><span>06. 고객 방문 처리</span></li>
+                            <li><span>07. 처리 결과 회의</span></li>
+                            <li><span>08. 고객 만족확인</span></li>
+                            <li><span>09</span></li>
+                            <li><span>처리완료</span></li>
+                        </ul>
+                        <img src="./images/ynarrow.svg" alt="화살표">
+                    </div>
+                    <div class="memAgree">
+                        <fieldset>
+                            <legend>개인정보수집 및 이용동의</legend>
+                            <h3>개인정보수집 및 이용동의</h3>
+                            <div>
+                                <p>개인정보 동의 관련</p>
+                            </div>
+                            <p class="small-checker">
+                                <span>위의 개인정보취급방침에 동의하십니까?(필수)</span>
+                                <input type="checkbox" id="check1" class="checkbox"><label for="check1" class="checkbox"></label>
+                            </p>
+                        </fieldset>
+                       <fieldset>
+                            <legend>마케팅 및  광고에 활용</legend>
+                            <h3>마케팅 및  광고에 활용</h3>
+                            <div class="etc_40">
+                                <p>동의 관련</p>
+                            </div>
+                            <p class="small-checker">
+                                <span>위의 마케팅 및 광고 활용 이용에 동의하십니까?(선택)</span>
+                                <input type="checkbox" id="check2" class="checkbox" name="mkt_agree"><label for="check2" class="checkbox"></label>
+                            </p>
+                            <div style="margin: 40px 0;">
+                                <p>※귀하는 개인정보 수집·이용에 동의하지 않을 권리가 있으며, 동의를 거부할 경우에는 회원가입을 통한 상품 구매, 고객상담, 이벤트 참여기회 제공 등 사이트 서비스 이용에 제한될 수 있습니다.</p>
+                             </div>
+                        </fieldset>
+                    </div>
+                    <div class="mem-join">
+                        <div class="mj-head">
+                            <h3>신청서 작성</h3>
+                            <p>* 항목은 필수 입력해주세요</p>
+                        </div>
+                        <fieldset>
+                            <legend>회원 가입 정보 입력</legend>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>이름 *</li>
+                                        <li><input type="text" id="user_nm" name="user_nm" maxlength="100"><label for="user_nm">이름 입력</label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>연락처 *</li>
+                                        <li class="phone">
+                                            <input type="text" name="tel1" id="tel1" maxlength="4" class="numchk" value=""><label for="tel1">일반전화 중간 자리 입력</label>
+                                            <span>-</span>
+                                            <input type="text" name="tel2" id="tel2" maxlength="4" class="numchk" value=""><label for="tel2">일반전화 중간 자리 입력</label>
+                                            <span>-</span>
+                                            <input type="text" name="tel3" id="tel3" maxlength="4" class="numchk" value=""><label for="tel3">일반전화 끝 자리 입력</label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>주소 *</li>
+                                        <li class="address">
+                                            <input type="hidden" id="home_zip1" name="home_zip1" maxlength="3" readonly="">
+                                            <input type="hidden" id="home_zip2" name="home_zip2" maxlength="3" readonly="">
+                                            <input type="text" id="home_zip5" name="home_zip5" maxlength="5" readonly=""><label for="home_zip5">우편번호 입력</label>
+                                            <a href="javascript:DaumPostcode();" style="margin-top: 5px;">우편번호 찾기</a>
+                                            <div>
+                                                <input type="text" name="road_addr" id="road_addr" placeholder="도로명주소" class="street" readonly=""><label for="road_addr">도로명주소 입력</label>
+                                                <input type="text" name="home_addr2" id="home_addr2" placeholder="상세주소" class="addInput"><label for="">상세주소 입력</label>
+                                            </div>
+                                            <div>
+                                                <input type="text" name="home_addr" id="home_addr" placeholder="지번주소" class="street"><label for="home_addr">지번주소 입력</label>
+                                                <input type="text" name="rhome_addr2" id="rhome_addr2" class="addInput" disabled=""><label for="rhome_addr2">상세주소 입력</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>이메일 *</li>
+                                        <li class="email">
+                                            <input type="text" id="email1" name="email1" maxlength="20" value=""><label for="email1">직접 입력</label>
+                                            <span>@</span>
+                                            <input type="text" id="email2" name="email2" maxlength="20" value=""><label for="email2">직접 입력</label>
+                                            <span style="font-size: 0;">.</span>
+                                            <select id="sel_email">
+                                                <option value="">직접 입력</option>
+                                                    <option value="naver.com">naver.com</option>
+                                                    <option value="hanmail.net">hanmail.net</option>
+                                                    <option value="hotmail.com">hotmail.com</option>
+                                                    <option value="nate.com">nate.com</option>
+                                                    <option value="gmail.com">gmail.com</option>
+                                                    <option value="daum.net">daum.net</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>구입일자 </li>
+                                        <li><input type="text" name="buy_datestr" id="buy_datestr" maxlength="10"><label for="buy_datestr">구입일자 입력</label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>구입처 </li>
+                                        <li><input type="text" name="buy_agency" id="buy_agency" maxlength="20"><label for="buy_agency">구입대리점 입력</label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>분류 </li>
+                                        <li class="sel">
+                                            <select name="standard" id="standard">
+                                                <option value="">선택</option>
+                                                <option value="프레임">프레임</option>
+                                                <option value="매트리스">매트리스</option>
+                                                <option value="기타">기타</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>규격 </li>
+                                        <li class="sel">
+                                            <input type="text" name="product_gb" id="product_gb" placeholder="규격을 입력하세요"><label for="product_gb">규격 입력</label>     
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>모델 </li>
+                                        <li class="model">
+                                            <input type="text" name="product_nm" id="product_nm" maxlength="20"><label for="product_nm">모델 입력</label>
+                                            <p>
+                                                * 모델은 머리판 뒤쪽에 붙어있는 품질보증서에서 확인하실 수 있습니다. 매트리스는 상면에 있는 라벨에서 확인하실 수 있습니다. <br>
+                                                (라벨에 대한 자세한 설명은 제품 &gt; 매트리스에서 확인하실 수 있습니다.)
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>제목 *</li>
+                                        <li class="sub"><input type="text" id="title" name="title" maxlength="100"><label for="title">제목 입력</label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>신청내용 *</li>
+                                        <li class="detail">
+                                            <textarea id="txt_content" name="content" maxlength="4000" style="resize:none;"></textarea>
+                                            <p>0 / 4000자</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>첨부파일</li>
+                                        <li class="model">
+                                            <div>                  
+                                                
+                                                
+                                                    <ul class="pdt30">
+                                                        <li class="file-wrap clearfix">
+                                                            <input type="text" name="fileName" id="fileName" maxlength="100"  readonly="readonly"><label for="product_nm">첨부파일</label>
+                                                            <div class="i_file-wrap mgr5 fl">
+                                                                <a href="javascript:;" id="fileUplaod" style="margin-left: 5px; padding: 5px 0;">파일선택</a>
+                                                                <a href="javascript:;" id="fileDelete" style="display:none;">삭제</a>
+                                                                <input type="file" class="i_file" style="display:none;">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                
+            
+                                            </div>                                  
+                                            <p>
+                                                * 파일 첨부는 1개만 가능하므로, 복수의 사진파일 업로드를 희망할 경우 압축파일 형태로 업로드 해주시기 바랍니다.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a href="javascript:submit();" class="btn-req">신청 하기</a>
+                        </fieldset>
+    
+                    </div>
+                </section>
+
+                <section id="notice">
+                    <fieldset>
+                        <legend>공지사항 검색</legend>
+                        <div class="search-box2">
+                            <div id="articleSelect2" style="margin: 5px;">
+                                <label for="key">선택</label>
+                                <select id="key" name="key" style="border:1px solid #a5a5a5; width: 70px; height:30px;">
+                                    <option value="">선택</option>
+                                    <option value="noti_nm1">제목</option>
+                                    <option value="detail">내용</option>
+                                </select>
+                            </div>
+                            <input type="text" id="keyword" style="margin: 5px; border:1px solid #a5a5a5;" placeholder="검색어를 입력하세요" maxlength="100" onkeypress="if (event.keyCode == 13) { searchNotice(1); event.returnValue = false }"><label for="keyword">검색어 입력</label>
+                            <a href="#" style="margin: 5px;">검색</a>
+                        </div>
+                    </fieldset>
+                    
+                    <table class="articleList" border="0" cellspacing="0" cellpadding="0" summary="공지사항의 제목과 등록일 정보 제공">
+                        <caption>공지사항</caption>
+                        <colgroup>
+                            <col class="col1">
+                            <col class="col2">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>제목</th>
+                                <th>등록일</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbl_alist">
+                            <tr class="btabName">
+                                <td class="sub btabBtn" id="bbutton">
+                                    <a href="#">[공지사항] 2022년 4월  AS만족도 설문조사 추첨결과 발표</a>
+                                </td>
+                                <td>2022-05-09</td>
+                            </tr>
+                            <tr class="btabName">
+                                <td class="sub">
+                                    <a href="#">[공지사항] 2022년 4월  배송만족도 설문조사 추첨결과 발표</a>
+                                </td>
+                                <td>2022-05-09</td>
+                            </tr>
+                            <tr class="btabName">
+                                <td class="sub">
+                                    <a href="#">[공지사항] 2022년 3월  AS만족도 설문조사 추첨결과 발표</a>
+                                </td>
+                                <td>2022-04-05</td>
+                            </tr>
+                            <tr class="btabName">
+                                <td class="sub">
+                                    <a href="#">[공지사항] 2022년 3월  배송만족도 설문조사 추첨결과 발표</a>
+                                </td>
+                                <td>2022-04-05</td>
+                            </tr>
+                            <tr class="btabName">
+                                <td class="sub">
+                                    <a href="#">[공지사항] 2022년 2월  AS만족도 설문조사 추첨결과 발표</a>
+                                </td>
+                                <td>2022-03-10</td>
+                            </tr>
+                            <tr class="btabName">
+                                <td class="sub">
+                                    <a href="#">[공지사항] 2022년 2월  배송만족도 설문조사 추첨결과 발표</a>
+                                </td>
+                                <td>2022-03-10</td>
+                            </tr>
+                            <tr class="btabName">
+                                <td class="sub">
+                                    <a href="#">[공지사항] 2022년 1월  AS만족도 설문조사 추첨결과 발표</a>
+                                </td>
+                                <td>2022-02-08</td>
+                            </tr>
+                            <tr class="btabName">
+                                <td class="sub">
+                                    <a href="#">[공지사항] 2022년 1월  배송만족도 설문조사 추첨결과 발표</a>
+                                </td>
+                                <td>2022-02-08</td>
+                            </tr>
+                            <tr class="btabName">
+                                <td class="sub">
+                                    <a href="#">[공지사항] 2021년  12월  AS만족도 설문조사 추첨결과 발표</a>
+                                </td>
+                                <td>2022-01-06</td>
+                            </tr>
+                            <tr class="btabName">
+                                <td class="sub">
+                                    <a href="#">[공지사항] 2021년 12월  배송만족도 설문조사 추첨결과 발표</a>
+                                </td>
+                                <td>2022-01-06</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="paging">
+                        <div id="div_pageNavi">
+                            <ol>
+                                <li>
+                                    <a class="prev" href="#" alt="1" title="이전 10개">◀</a> 
+                                </li>
+                                <li class="on">
+                                    <a class="on">1 </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" alt="2" title="2">2</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" alt="3" title="3">3</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" alt="4" title="4">4</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" alt="5" title="5">5</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" alt="6" title="6">6</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" alt="7" title="7">7</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" alt="8" title="8">8</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" alt="9" title="9">9</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" alt="10" title="10">10</a>
+                                </li>
+                                <li>
+                                    <a class="next" href="#" alt="11" title="다음 10개">▶</a></div>
+                                </li>
+                            </ol>          
+                    </div>
+                </section><!--commu-notice-->
+            </section><!--commu-main-->
+            <!--asdf-->
+            <section class="main-footer">
+                <h3>tel</h3>
+                <hr>
+                <div class="mf-container">
+                    <div>
+                        <p>고객센터 1899-8182</p>
+                        <p>평일 9시-17시 / 토요일.일요일.공휴일 휴무</p>
+                    </div>
+                    <div>
+                        <p>특판사업문의 1899-8182</p>
+                        <p>E-mail : kbh@simmons.co.kr</p>
+                    </div>
+                </div>
+                <hr>
+            </section><!--main-footer-->
+        </div>
+    </main>
+</body>
+</html>

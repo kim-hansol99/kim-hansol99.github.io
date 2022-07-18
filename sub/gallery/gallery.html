@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Simmons Main Page">
+    <meta name="Author" content="Suu01">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./css/gallery.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/gallery.js"></script>
+    <link rel="shortcut icon" href="./images/1_favicon_icon.ico.ico">
+    
+</head>
+<body>
+    <header>
+        <h1><a href="../../index.html"><img src="./images/header_logo.png" alt="logo"></a></h1>
+
+        <nav>
+            <ul class="gnb">
+                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn" onclick="openMenu()"></a></li>
+            </ul>
+        </nav>
+
+        <div class="side-menu">
+            <ul class="s-menu">
+                <li><a href="../etc/2_login_member/login_member.html">Login</a></li>
+                <li><a href="../etc/3_Cart/cart.html"><img src="./images/cart.png" alt="cart-icon"></a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search-icon" onclick="openSearh()"></a></li>
+            </ul>
+        </div> 
+
+        <div class="menu-sub" id="menu-sub">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            
+            <ul class="myMenu">
+                <li class="menu-top">
+                    <a href="../etc/2_login_member/login_member.html">로그인</a>
+                    <a href="../etc/3_Cart/cart.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="#" class="sub-menu1">Product</a>
+                    <ul class="sub-menu-des1">
+                        <li><a href="../product_bed/product_bed.html">Bed</a></li>
+                        <li><a href="../product_bedding/product_bedding.html">Bedding</a></li>
+                        <li><a href="../product_furniture/product_furniture.html">Furniture</a></li>
+                        <li><a href="../product_roomset/product_roomset.html">RoomSet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="sub-menu2">Brand</a>
+                    <ul class="sub-menu-des2">
+                        <li><a href="../brand/the_black/the_black.html">the Black</a></li>
+                        <li><a href="../brand/heritage/heritage.html">heritage</a></li>
+                    </ul>
+                </li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../community/community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <div id="search-sub" class="search-sub">
+            <span class="closebtn" onclick="closeSearch()">×</span>
+
+            <div class="search-sub-content">
+                <form action="#">
+                    <input type="text" placeholder="검색어를 입력하세요!" name="search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-top">
+            <h2>SIMMONS GALLERY</h2>
+            <div class="img-wrap">
+                <img src="./images/gallery_visual.jpg" alt="gallery-img">
+            </div>
+        </section>
+
+        <section class="tap">
+            <h2>tap</h2>
+            <ul>
+                <li id="tap-gallery">
+                    <a class="point-color-add" id="tap-gallery-a" href="#" onclick="btnGallery()">Gallery</a>
+                </li>
+                <li id="tap-search">
+                    <a href="#" id="tap-search-a" onclick="btnSearch()">Search</a>
+                </li>
+            </ul>
+        </section>
+
+        <div class="gallery" id="gallery">
+            <section class="gallery-title">
+                <h2>gallery-title</h2>
+                <div class="sec1-img-wrap">
+                    <img src="./images/leaf.png" alt="leaf">
+                </div>
+                <div class="sec1-txt">
+                    <p>시몬스가 제안하는 라이프스타일을 만날 수 있는 플래그십 스토어입니다.<br>매트리스는 물론 프레임·가구·침구까지 시몬스의 모든 제품이 준비되어 있습니다.</p>
+                </div>
+            </section>
+    
+            <section class="gallery-intro">
+                <div class="g1 g">
+                    <hr>
+                    <h2>BLACK Mansion</h2>
+                    <div class="g-des">
+                        <p>1920년대 파리에서 시작해 미국 상류 사회 라이프스타일을 완성한 아르데코 예술 양식의<br> 화려함과 고급스러움을 재현했습니다. 고급스러운 마감으로 세심하게 설계된 블랙 맨션에서 시몬스 마스터피스 컬렉션 ‘뷰티레스트 블랙’을 만나보세요</p>
+                    </div>
+                    <div class="g-img-wrap">
+                        <img src="./images/g-slide1.png" alt="slide">
+                    </div>
+                </div>
+                <div class="g2 g">
+                    <hr>
+                    <h2>BEAUTYREST</h2>
+                    <div class="g-des">
+                        <p>오랜 수면 연구를 바탕으로 탄생한 시몬스의 대표 컬렉션 ‘뷰티레스트‘를 소개하는 공간입니다.<br> 마치 최고급 호텔 스위트 룸에 들어온 듯한 인테리어 컨셉으로 다양한 라이프스타일을 제안합니다</p>
+                    </div>
+                    <div class="g-img-wrap">
+                        <img src="./images/g-slide2.png" alt="slide">
+                    </div>
+                </div>
+                <div class="g3 g">
+                    <hr>
+                    <h2>KENOSHA</h2>
+                    <div class="g-des">
+                        <p>수면 전문 브랜드 시몬스가 제안하는 라이프스타일 컬렉션 ‘케노샤’를 만나볼 수 있는 공간입니다.<br> 침구, 소파, 프래그런스 등 소재 선정부터 디테일 완성도까지 ‘기본에 충실’한 시몬스의 철학을 그대로 담아낸 다양한 제품을 경험할 수 있습니다</p>
+                    </div>
+                    <div class="g-img-wrap">
+                        <img src="./images/g-slide3.png" alt="slide">
+                    </div>
+                </div>
+                <div class="g4 g">
+                    <hr>
+                    <h2>Technical Zone</h2>
+                    <div class="g-des">
+                        <p>시몬스의 장인정신과 독보적 매트리스 설계 노하우인 ‘조닝(Zoning)’ 및 ‘레이어링(Layering)’ 기술을<br> 만날 수 있는 공간입니다. 마치 갤러리의 아트피스처럼 전시되어 있는 시몬스의 다양한 포켓스프링, 최고급 내장재 등 고객을 위한 시몬스의 노력을 보다 가까운 곳에서 확인하세요</p>
+                    </div>
+                    <div class="g-img-wrap">
+                        <img src="./images/g-slide4.png" alt="slide">
+                    </div>
+                </div>
+                <div class="g5 g">
+                    <hr>
+                    <h2>Mattress Lab</h2>
+                    <div class="g-des">
+                        <p>시몬스의 독보적 매트리스 설계 노하우를 그대로 느낄 수 있는 체험존입니다.<br> 시몬스 장인정신의 집약체인 ‘포켓스프링’과 이를 조합한 ‘조닝(Zoning)’ 시스템은 물론, 50여 종의 프리미엄 내장재를 포켓스프링 위에 다양하게 조합해 매트리스에 눕는 순간 1차적인 느낌을 완성하는 ‘레이어링(Layering)’까지 고객이 직접 보고 만지며 경험할 수 있습니다</p>
+                    </div>
+                    <div class="g-img-wrap">
+                        <img src="./images/g-slide5.png" alt="slide">
+                    </div>
+                </div>
+                <div class="g6 g">
+                    <hr>
+                    <h2>Heritage Alley</h2>
+                    <div class="g-des">
+                        <p>작은 것 하나에도 기본을 지켜내는 고집으로 흔들리지 않는 편안함을 약속해 온 시몬스의 역사적인 순간들을 소개합니다</p>
+                    </div>
+                    <div class="g-img-wrap">
+                        <img src="./images/g-slide6.png" alt="slide">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="gallery-search" id="gallery-search">
+            <div class="search">
+                <section class="search-section">
+                    <div class="search-tap">
+                        <ul>
+                            <li><a href="#">주소</a></li>
+                            <li><a href="#">매장명</a></li>
+                        </ul>
+                    </div>
+                    <div class="search-bar">
+                        <form action="#" name="search-bar">
+                            <input type="search" name="search-bar" id="search-bar" placeholder="검색어를 입력해주세요">
+                            <div class="search-icon-wrap">
+                                <img src="./images/g-search.png" alt="search-icon">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="gallery-info">
+                        <div class="gallery-info-des">
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 테라스점</p>
+                                    <p class="gal-add-add">17406) 경기 이천시 모가면 사실로 988</p>
+                                </a>
+                                <a href="#"><p class="gal-number">031-631-4071</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 강동둔촌점</p>
+                                    <p class="gal-add-add">05375) 서울 강동구 양재대로99길 4 (성내동)</p>
+                                </a>
+                                <a href="#"><p class="gal-number">02-488-9193</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 기흥점</p>
+                                    <p class="gal-add-add">17086) 경기 용인시 기흥구 신고매로 59 (고매동) 리빙파워센터 지하 1~2층</p>
+                                </a>
+                                <a href="#"><p class="gal-number">031-281-4070</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 논현점</p>
+                                    <p class="gal-add-add">06040) 서울 강남구 논현로 741 (논현동)</p>
+                                </a>
+                                <a href="#"><p class="gal-number">02-515-9747</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 대구점</p>
+                                    <p class="gal-add-add">42006) 대구 수성구 달구벌대로 2331 (수성동4가) 한영빌딩 1~2층</p>
+                                </a>
+                                <a href="#"><p class="gal-number">053-756-7932</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 부산김해점</p>
+                                    <p class="gal-add-add">50940) 경남 김해시 김해대로 2324 (봉황동)</p>
+                                </a>
+                                <a href="#"><p class="gal-number">055-338-9702</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 부산좌천점</p>
+                                    <p class="gal-add-add">48727) 부산 동구 중앙대로 456 (좌천동) 1층~4층</p>
+                                </a>
+                                <a href="#"><p class="gal-number">051-987-2595</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 부산해운대점</p>
+                                    <p class="gal-add-add">48082) 부산 해운대구 좌동로53번길 40 (중동) 1층~4층</p>
+                                </a>
+                                <a href="#"><p class="gal-number">051-741-1293</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 부천중동점</p>
+                                    <p class="gal-add-add">14555) 경기 부천시 길주로 428 (춘의동) 1층</p>
+                                </a>
+                                <a href="#"><p class="gal-number">032-668-9072</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 분당점</p>
+                                    <p class="gal-add-add">13552) 경기 성남시 분당구 대왕판교로 167 (금곡동)</p>
+                                </a>
+                                <a href="#"><p class="gal-number">031-786-0845</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 세종대평점</p>
+                                    <p class="gal-add-add">30153) 세종특별자치시 갈매로 58 (대평동) 황산프라자 1층</p>
+                                </a>
+                                <a href="#"><p class="gal-number">044-868-6085</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 세종점</p>
+                                    <p class="gal-add-add">30121) 세종특별자치시 한누리대로 350 (어진동) 뱅크빌딩 1층</p>
+                                </a>
+                                <a href="#"><p class="gal-number">044-867-9893</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 수원점</p>
+                                    <p class="gal-add-add">16529) 경기 수원시 영통구 중부대로 394 (원천동)</p>
+                                </a>
+                                <a href="#"><p class="gal-number">031-211-4071</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 스타필드 안성점</p>
+                                    <p class="gal-add-add">17563) 경기 안성시 공도읍 서동대로 3930-39 스타필드 안성점 1층</p>
+                                </a>
+                                <a href="#"><p class="gal-number">031-8092-1474</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 울산점</p>
+                                    <p class="gal-add-add">44713) 울산 남구 삼산로 325 (삼산동)</p>
+                                </a>
+                                <a href="#"><p class="gal-number">052-267-6530</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 용인구성점</p>
+                                    <p class="gal-add-add">16907) 경기 용인시 기흥구 용구대로 2427 (마북동)</p>
+                                </a>
+                                <a href="#"><p class="gal-number">031-693-8417</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 잠실점</p>
+                                    <p class="gal-add-add">05604) 서울 송파구 백제고분로 237 (삼전동)</p>
+                                </a>
+                                <a href="#"><p class="gal-number">02-416-4071</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 하남미사점</p>
+                                    <p class="gal-add-add">12922) 경기 하남시 미사대로 456 (망월동) 1층</p>
+                                </a>
+                                <a href="#"><p class="gal-number">031-794-4073</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 갤러리 둔산점</p>
+                                    <p class="gal-add-add">35233) 대전 서구 대덕대로 230 (둔산동) 1층</p>
+                                </a>
+                                <a href="#"><p class="gal-number">042-489-4070</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+
+                            <div class="gal-name-address">
+                                <a href="#">
+                                    <p class="gal-add-title">시몬스 신세계 하남점</p>
+                                    <p class="gal-add-add">12942) 경기 하남시 미사대로 750 (신장동) 신세계백화점 스타필드 하남점 B1층</p>
+                                </a>
+                                <a href="#"><p class="gal-number">031-8072-1217</p></a>
+                                <a href="#">
+                                    <div class="gal-copy">
+                                        <p>복사</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <p class="gal-popup">상세보기 ></p>
+                                </a>
+                                <div class="gal-map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="search-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.108121843283!2d127.44406601562248!3d37.197661252923936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3564af358da80ea5%3A0x215a036913e34abc!2z6rK96riw64-EIOydtOyynOyLnCDrqqjqsIDrqbQg7IKs7Iuk66GcIDk4OA!5e0!3m2!1sko!2skr!4v1652926232448!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </section>
+            </div>
+
+            <section class="search-table">
+                <table>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>매장명</th>
+                            <th>주소</th>
+                            <th>전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">시몬스 테라스점</a></td>
+                            <td>17406) 경기 이천시 모가면 사실로 988</td>
+                            <td>031-631-4071</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 강동둔촌점</a></td>
+                            <td>05375) 서울 강동구 양재대로99길 4 (성내동)</td>
+                            <td>02-488-9193</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 기흥점</a></td>
+                            <td>17086) 경기 용인시 기흥구 신고매로 59 (고매동) 리빙파워센터 지하 1~2층</td>
+                            <td>031-281-4070</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 논현점</a></td>
+                            <td>06040) 서울 강남구 논현로 741 (논현동)</td>
+                            <td>02-515-9747</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 대구점</a></td>
+                            <td>42006) 대구 수성구 달구벌대로 2331 (수성동4가) 한영빌딩 1~2층</td>
+                            <td>053-756-7932</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 부산김해점</a></td>
+                            <td>50940) 경남 김해시 김해대로 2324 (봉황동)</td>
+                            <td>055-338-9702</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 부산좌천점</a></td>
+                            <td>48727) 부산 동구 중앙대로 456 (좌천동) 1층~4층</td>
+                            <td>051-987-2595</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 부산해운대점</a></td>
+                            <td>48082) 부산 해운대구 좌동로53번길 40 (중동) 1층~4층</td>
+                            <td>051-741-1293</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 부천중동점</a></td>
+                            <td>14555) 경기 부천시 길주로 428 (춘의동) 1층</td>
+                            <td>032-668-9072</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 분당점</a></td>
+                            <td>13552) 경기 성남시 분당구 대왕판교로 167 (금곡동)</td>
+                            <td>031-786-0845</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 세종대평점</a></td>
+                            <td>30153) 세종특별자치시 갈매로 58 (대평동) 황산프라자 1층</td>
+                            <td>044-868-6085</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 세종점</a></td>
+                            <td>30121) 세종특별자치시 한누리대로 350 (어진동) 뱅크빌딩 1층</td>
+                            <td>044-867-9893</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 수원점</a></td>
+                            <td>16529) 경기 수원시 영통구 중부대로 394 (원천동)</td>
+                            <td>031-211-4071</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 스타필드 안성점</a></td>
+                            <td>17563) 경기 안성시 공도읍 서동대로 3930-39 스타필드 안성점 1층</td>
+                            <td>031-8092-1474</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 울산점</a></td>
+                            <td>44713) 울산 남구 삼산로 325 (삼산동)</td>
+                            <td>052-267-6530</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 용인구성점</a></td>
+                            <td>16907) 경기 용인시 기흥구 용구대로 2427 (마북동)</td>
+                            <td>031-693-8417</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 잠실점</a></td>
+                            <td>05604) 서울 송파구 백제고분로 237 (삼전동)</td>
+                            <td>02-416-4071</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 하남미사점</a></td>
+                            <td>12922) 경기 하남시 미사대로 456 (망월동) 1층</td>
+                            <td>031-794-4073</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 갤러리 둔산점</a></td>
+                            <td>35233) 대전 서구 대덕대로 230 (둔산동) 1층</td>
+                            <td>042-489-4070</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">시몬스 신세계 하남점</a></td>
+                            <td>12942) 경기 하남시 미사대로 750 (신장동) 신세계백화점 스타필드 하남점 B1층</td>
+                            <td>031-8072-1217</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

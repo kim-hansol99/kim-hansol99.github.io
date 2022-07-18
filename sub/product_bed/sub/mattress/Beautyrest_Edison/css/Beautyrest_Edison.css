@@ -1,0 +1,1068 @@
+@import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
+@import url("https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css");
+@import url("https://fonts.googleapis.com/css2?family=Ramaraja&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "SCoreDream";
+  word-break: keep-all;
+  background-color: #fefefc;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  vertical-align: bottom;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+span {
+  display: block;
+  font-size: 1em;
+}
+
+header,
+nav,
+main,
+section,
+aside,
+article,
+footer {
+  display: block;
+}
+
+body {
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 0;
+    padding-left: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-left: 80px;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  border-bottom: 1px solid #333;
+  background-color: #fefefc;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 70px;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px 0;
+    border-bottom: 0;
+    border-right: 1px solid #333;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 80px;
+  }
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+  header h1 {
+    position: static;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header nav {
+    height: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header nav ul.gnb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header nav ul.gnb li {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header nav ul.gnb li {
+    display: block;
+  }
+}
+
+header nav ul.gnb li:first-child {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  header nav ul.gnb li:first-child {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header nav ul.gnb li:nth-child(2) a span {
+    margin-top: 0;
+  }
+}
+
+header nav ul.gnb li a img {
+  width: 25px;
+  height: auto;
+}
+
+header nav ul.gnb li a span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #82ca9c;
+}
+
+@media screen and (min-width: 768px) {
+  header div.side-menu {
+    height: 20%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header div.side-menu .s-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header div.side-menu .s-menu li {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header div.side-menu .s-menu li {
+    display: block;
+  }
+}
+
+header div.side-menu .s-menu li:first-child {
+  font-size: 18px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+header div.side-menu .s-menu li:last-child {
+  display: block;
+}
+
+header div.side-menu .s-menu li:last-child a img {
+  width: 25px;
+  height: 25px;
+}
+
+main .slide {
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  main .slide {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .slide {
+    width: 100%;
+    margin-top: 110px;
+    margin-bottom: 40px;
+  }
+}
+
+main .slide img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main .slide img {
+    margin: 0 auto;
+  }
+}
+
+main .wrapper {
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+main .wrapper .right {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .right {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right {
+    float: right;
+    width: 32%;
+    padding-right: 15px;
+  }
+}
+
+main .wrapper .right h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .right h1 {
+    font-size: 1.7em;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right h1 {
+    font-size: 1.8em;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0.04em;
+    margin-top: 20px;
+    margin-bottom: 1px;
+  }
+}
+
+main .wrapper .right .na_bo {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right .na_bo {
+    display: block;
+    width: 75px;
+    height: 2px;
+    background-color: #82ca9c;
+    margin-bottom: 40px;
+  }
+}
+
+main .wrapper .right form {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right form {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+main .wrapper .right form p {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 0.04em;
+  margin-top: 25px;
+}
+
+main .wrapper .right form p select {
+  float: right;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 60%;
+  height: 30px;
+  color: #333333;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+}
+
+main .wrapper .right .price {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right .price {
+    display: block;
+    height: 25px;
+  }
+}
+
+main .wrapper .right .price p {
+  float: left;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+
+main .wrapper .right .price .won {
+  width: 60%;
+  float: right;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+main .wrapper .right .hr_2 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right .hr_2 {
+    display: block;
+    width: 100%;
+    border: 0.5px solid #cecece;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+main .wrapper .right .point {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right .point {
+    display: block;
+    width: 100%;
+    height: 160px;
+  }
+}
+
+main .wrapper .right .point p {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+
+main .wrapper .right .point .acc_box {
+  height: 30px;
+}
+
+main .wrapper .right .point .acc_box .acc {
+  float: left;
+}
+
+main .wrapper .right .point .acc_box .acc_p {
+  width: 60%;
+  float: right;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+main .wrapper .right .point .simon_pay_box .simon_pay {
+  float: left;
+}
+
+main .wrapper .right .point .simon_pay_box .simon_pay_p {
+  width: 60%;
+  height: 25px;
+  float: right;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: #cecece;
+}
+
+main .wrapper .right .point .simon_pay_box .simon_pay_p_sale {
+  width: 60%;
+  float: right;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+main .wrapper .right .point .simon_pay_box .simon_pay_p_sale .red {
+  display: inline;
+  color: #f05252;
+}
+
+main .wrapper .right .point .simon_pay_box .simon_pay_p_sale .underscore {
+  font-size: 0.75em;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+}
+
+main .wrapper .right .icon {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .wrapper .right .icon button {
+  width: 70%;
+  max-width: 330px;
+  height: 40px;
+  margin: auto;
+  font-family: "SCoreDream";
+  font-size: 1em;
+  font-weight: 600;
+  color: #fefefc;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #82ca9c;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .right .icon button {
+    max-width: 400px;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .right .icon button {
+    width: 100%;
+    max-width: 100%;
+    height: 45px;
+    font-family: "SCoreDream";
+    font-size: 1em;
+    font-weight: 600;
+  }
+}
+
+main .wrapper .tabs {
+  width: 280px;
+  margin-bottom: 30px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .tabs {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .tabs {
+    display: none;
+  }
+}
+
+main .wrapper .tabs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 3%;
+}
+
+main .wrapper .tabs ul li {
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .tabs ul li {
+    margin-right: 35px;
+  }
+}
+
+main .wrapper .tabs ul li a {
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+  margin-bottom: 0;
+}
+
+main .wrapper .tabs ul li:last-child {
+  margin-right: 0;
+}
+
+main .wrapper .left {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .left {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left {
+    width: 65%;
+    float: left;
+  }
+}
+
+main .wrapper .left #pay img {
+  width: 100%;
+}
+
+main .wrapper .left #emotion_science,
+main .wrapper .left #spring,
+main .wrapper .left #layering {
+  width: 100%;
+}
+
+main .wrapper .left #emotion_science .emotion_science-text,
+main .wrapper .left #emotion_science .spring-text,
+main .wrapper .left #emotion_science .layering-text,
+main .wrapper .left #spring .emotion_science-text,
+main .wrapper .left #spring .spring-text,
+main .wrapper .left #spring .layering-text,
+main .wrapper .left #layering .emotion_science-text,
+main .wrapper .left #layering .spring-text,
+main .wrapper .left #layering .layering-text {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .left #emotion_science .emotion_science-text,
+  main .wrapper .left #emotion_science .spring-text,
+  main .wrapper .left #emotion_science .layering-text,
+  main .wrapper .left #spring .emotion_science-text,
+  main .wrapper .left #spring .spring-text,
+  main .wrapper .left #spring .layering-text,
+  main .wrapper .left #layering .emotion_science-text,
+  main .wrapper .left #layering .spring-text,
+  main .wrapper .left #layering .layering-text {
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #emotion_science .emotion_science-text,
+  main .wrapper .left #emotion_science .spring-text,
+  main .wrapper .left #emotion_science .layering-text,
+  main .wrapper .left #spring .emotion_science-text,
+  main .wrapper .left #spring .spring-text,
+  main .wrapper .left #spring .layering-text,
+  main .wrapper .left #layering .emotion_science-text,
+  main .wrapper .left #layering .spring-text,
+  main .wrapper .left #layering .layering-text {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}
+
+main .wrapper .left #emotion_science .emotion_science-text .lookbook,
+main .wrapper .left #emotion_science .spring-text .lookbook,
+main .wrapper .left #emotion_science .layering-text .lookbook,
+main .wrapper .left #spring .emotion_science-text .lookbook,
+main .wrapper .left #spring .spring-text .lookbook,
+main .wrapper .left #spring .layering-text .lookbook,
+main .wrapper .left #layering .emotion_science-text .lookbook,
+main .wrapper .left #layering .spring-text .lookbook,
+main .wrapper .left #layering .layering-text .lookbook {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .left #emotion_science .emotion_science-text .lookbook,
+  main .wrapper .left #emotion_science .spring-text .lookbook,
+  main .wrapper .left #emotion_science .layering-text .lookbook,
+  main .wrapper .left #spring .emotion_science-text .lookbook,
+  main .wrapper .left #spring .spring-text .lookbook,
+  main .wrapper .left #spring .layering-text .lookbook,
+  main .wrapper .left #layering .emotion_science-text .lookbook,
+  main .wrapper .left #layering .spring-text .lookbook,
+  main .wrapper .left #layering .layering-text .lookbook {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #emotion_science .emotion_science-text .lookbook,
+  main .wrapper .left #emotion_science .spring-text .lookbook,
+  main .wrapper .left #emotion_science .layering-text .lookbook,
+  main .wrapper .left #spring .emotion_science-text .lookbook,
+  main .wrapper .left #spring .spring-text .lookbook,
+  main .wrapper .left #spring .layering-text .lookbook,
+  main .wrapper .left #layering .emotion_science-text .lookbook,
+  main .wrapper .left #layering .spring-text .lookbook,
+  main .wrapper .left #layering .layering-text .lookbook {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}
+
+main .wrapper .left #emotion_science .emotion_science-text h1,
+main .wrapper .left #emotion_science .spring-text h1,
+main .wrapper .left #emotion_science .layering-text h1,
+main .wrapper .left #spring .emotion_science-text h1,
+main .wrapper .left #spring .spring-text h1,
+main .wrapper .left #spring .layering-text h1,
+main .wrapper .left #layering .emotion_science-text h1,
+main .wrapper .left #layering .spring-text h1,
+main .wrapper .left #layering .layering-text h1 {
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #emotion_science .emotion_science-text h1,
+  main .wrapper .left #emotion_science .spring-text h1,
+  main .wrapper .left #emotion_science .layering-text h1,
+  main .wrapper .left #spring .emotion_science-text h1,
+  main .wrapper .left #spring .spring-text h1,
+  main .wrapper .left #spring .layering-text h1,
+  main .wrapper .left #layering .emotion_science-text h1,
+  main .wrapper .left #layering .spring-text h1,
+  main .wrapper .left #layering .layering-text h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+  }
+}
+
+main .wrapper .left #emotion_science .emotion_science-text h2,
+main .wrapper .left #emotion_science .spring-text h2,
+main .wrapper .left #emotion_science .layering-text h2,
+main .wrapper .left #spring .emotion_science-text h2,
+main .wrapper .left #spring .spring-text h2,
+main .wrapper .left #spring .layering-text h2,
+main .wrapper .left #layering .emotion_science-text h2,
+main .wrapper .left #layering .spring-text h2,
+main .wrapper .left #layering .layering-text h2 {
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #emotion_science .emotion_science-text h2,
+  main .wrapper .left #emotion_science .spring-text h2,
+  main .wrapper .left #emotion_science .layering-text h2,
+  main .wrapper .left #spring .emotion_science-text h2,
+  main .wrapper .left #spring .spring-text h2,
+  main .wrapper .left #spring .layering-text h2,
+  main .wrapper .left #layering .emotion_science-text h2,
+  main .wrapper .left #layering .spring-text h2,
+  main .wrapper .left #layering .layering-text h2 {
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+}
+
+main .wrapper .left #emotion_science .emotion_science-text p,
+main .wrapper .left #emotion_science .spring-text p,
+main .wrapper .left #emotion_science .layering-text p,
+main .wrapper .left #spring .emotion_science-text p,
+main .wrapper .left #spring .spring-text p,
+main .wrapper .left #spring .layering-text p,
+main .wrapper .left #layering .emotion_science-text p,
+main .wrapper .left #layering .spring-text p,
+main .wrapper .left #layering .layering-text p {
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 1.25em;
+  letter-spacing: -0.03em;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .left #emotion_science .emotion_science-text p,
+  main .wrapper .left #emotion_science .spring-text p,
+  main .wrapper .left #emotion_science .layering-text p,
+  main .wrapper .left #spring .emotion_science-text p,
+  main .wrapper .left #spring .spring-text p,
+  main .wrapper .left #spring .layering-text p,
+  main .wrapper .left #layering .emotion_science-text p,
+  main .wrapper .left #layering .spring-text p,
+  main .wrapper .left #layering .layering-text p {
+    font-size: 0.75em;
+    line-height: 1.4em;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #emotion_science .emotion_science-text p,
+  main .wrapper .left #emotion_science .spring-text p,
+  main .wrapper .left #emotion_science .layering-text p,
+  main .wrapper .left #spring .emotion_science-text p,
+  main .wrapper .left #spring .spring-text p,
+  main .wrapper .left #spring .layering-text p,
+  main .wrapper .left #layering .emotion_science-text p,
+  main .wrapper .left #layering .spring-text p,
+  main .wrapper .left #layering .layering-text p {
+    font-size: 0.85em;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+  }
+}
+
+main .wrapper .left #emotion_science .emotion_science-text img,
+main .wrapper .left #emotion_science .spring-text img,
+main .wrapper .left #emotion_science .layering-text img,
+main .wrapper .left #spring .emotion_science-text img,
+main .wrapper .left #spring .spring-text img,
+main .wrapper .left #spring .layering-text img,
+main .wrapper .left #layering .emotion_science-text img,
+main .wrapper .left #layering .spring-text img,
+main .wrapper .left #layering .layering-text img {
+  width: 100%;
+}
+
+main .wrapper .left #spring .spring-text .small {
+  font-size: 0.3em;
+  font-weight: 400;
+  color: #cecece;
+  line-height: 3.8em;
+  letter-spacing: -0.03em;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .left #spring .spring-text .small {
+    font-size: 0.4em;
+    line-height: 3em;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #spring .spring-text .small {
+    font-size: 0.8em;
+    line-height: 1.7em;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+}
+
+main .wrapper .left #details {
+  margin-bottom: 60px;
+}
+
+main .wrapper .left #details h1 {
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #details h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+  }
+}
+
+main .wrapper .left #details table {
+  width: 100%;
+  border-top: 1px solid #000;
+  border-collapse: collapse;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #details table {
+    border-top: 1px solid #000;
+  }
+}
+
+main .wrapper .left #details table th, main .wrapper .left #details table td {
+  border-bottom: 1px solid #000;
+  padding: 10px;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .left #details table th, main .wrapper .left #details table td {
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #details table th, main .wrapper .left #details table td {
+    border-bottom: 1px solid #000;
+  }
+}
+
+main .wrapper .left #details table th {
+  width: 30%;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-align: right;
+  letter-spacing: -0.09em;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .left #details table th {
+    width: 20%;
+    font-size: 0.8em;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #details table th {
+    width: 20%;
+    font-size: 0.85em;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+}
+
+main .wrapper .left #details table td {
+  font-size: 0.5em;
+  font-weight: 400;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .left #details table td {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #details table td {
+    font-size: 0.85em;
+    font-weight: 400;
+  }
+}
+
+main .wrapper .left #details table p {
+  line-height: 2.5em;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .left #details table p {
+    line-height: 2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left #details table p {
+    line-height: 1.9em;
+  }
+}
+
+main .wrapper .left #details table .type_img {
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  main .wrapper .left #details table .type_img {
+    width: 30%;
+  }
+}
+
+main .wrapper .left .delivery_return h1 {
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left .delivery_return h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+  }
+}
+
+main .wrapper .left .delivery_return div {
+  margin-bottom: 25px;
+}
+
+main .wrapper .left .delivery_return p {
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: -0.09em;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left .delivery_return p {
+    font-size: 1em;
+    letter-spacing: -0.01em;
+  }
+}
+
+main .wrapper .left .delivery_return li {
+  font-size: 0.85em;
+  font-weight: 400;
+  text-indent: -20px;
+  letter-spacing: -0.02em;
+  line-height: 20px;
+  list-style-type: circle;
+  list-style-position: inside;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left .delivery_return li {
+    font-size: 0.9em;
+    letter-spacing: 0.01em;
+    line-height: 15.5px;
+  }
+}
+
+main .wrapper .left .delivery_return span {
+  display: inline;
+  color: #f05252;
+}
+
+main .wrapper .left .delivery_return .order {
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 15px;
+  word-break: keep-all;
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #000;
+}
+
+@media screen and (min-width: 1024px) {
+  main .wrapper .left .delivery_return .order {
+    font-weight: 500;
+    line-height: 15px;
+    word-break: keep-all;
+    padding: 15px;
+    border: 2px solid #000;
+  }
+}
+/*# sourceMappingURL=Beautyrest_Edison.css.map */

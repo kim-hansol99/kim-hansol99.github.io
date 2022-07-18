@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/the_black.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/the_black.js"></script>
+    <link rel="shortcut icon" href="./images/1_favicon_icon.ico.ico">
+    <title>the_black</title>
+</head>
+<body>
+    <header>
+        <h1><a href="../../../index.html"><img src="./images/header_logo.png" alt="logo"></a></h1>
+
+        <nav>
+            <ul class="gnb">
+                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn" onclick="openMenu()"></a></li>
+            </ul>
+        </nav>
+
+        <div class="side-menu">
+            <ul class="s-menu">
+                <li><a href="../../etc/2_login_member/login_member.html">Login</a></li>
+                <li><a href="../../etc/3_Cart/cart.html"><img src="./images/cart.png" alt="cart-icon"></a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search-icon" onclick="openSearh()"></a></li>
+            </ul>
+        </div> 
+
+        <div class="menu-sub" id="menu-sub">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            
+            <ul class="myMenu">
+                <li class="menu-top">
+                    <a href="../../etc/2_login_member/login_member.html">로그인</a>
+                    <a href="../../etc/3_Cart/cart.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="#" class="sub-menu1">Product</a>
+                    <ul class="sub-menu-des1">
+                        <li><a href="../../product_bed/product_bed.html">Bed</a></li>
+                        <li><a href="../../product_bedding/product_bedding.html">Bedding</a></li>
+                        <li><a href="../../product_furniture/product_furniture.html">Furniture</a></li>
+                        <li><a href="../../product_roomset/product_roomset.html">RoomSet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="sub-menu2">Brand</a>
+                    <ul class="sub-menu-des2">
+                        <li><a href="../../brand/the_black/the_black.html">the Black</a></li>
+                        <li><a href="../../brand/heritage/heritage.html">heritage</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../../community/community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <div id="search-sub" class="search-sub">
+            <span class="closebtn" onclick="closeSearch()">×</span>
+
+            <div class="search-sub-content">
+                <form action="#">
+                    <input type="text" placeholder="검색어를 입력하세요!" name="search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="head">
+            <h1>THE<br> MASTERPIECE<br> IN<br> YOUR LIFE<br> 'the BLACK'</h1>
+        </section>
+
+        <section id="contents">
+            <div class="wrapper">
+                <div class="story">
+                    <img src="./images/theblack_img01.jpg" alt="story">
+                    <div class="story_text">
+                        <h2>Story</h2>
+                        <p>
+                            마스터피스 컬렉션 ‘뷰티레스트 블랙’은 1920년대 파리에서 시작해 미국 상류사회 라이프스타일을 완성한 아르데코 예술 양식의 화려함과 고급스러움을 담아냈습니다 최고의 기술력을 자랑하는 국내 자체 생산 시스템으로 시몬스만의 독보적인 매트리스 설계 노하우를 집약해 탄생한 '뷰티레스트 블랙' 컬렉션이 최고에 대한 새로운 기준을 제시합니다
+                        </p>
+                    </div> <!-- story_text -->
+                </div> <!-- story -->
+
+                <div class="advanced">
+                    <img src="./images/theblack_img02.jpg" alt="advanced-pocket spring">
+                    <div class="advanced_text">
+                        <h2>Advanced-Pocket Spring</h2>
+                        <p>
+                            뷰티레스트 블랙의 핵심 기술인 삼중 나선 구조의 케이블 코일이 섬세하고 세련된 지지력을 구현합니다
+                        </p>
+                    </div> <!-- advanced_text -->
+                </div> <!-- advanced -->
+
+                <div class="zoning">
+                        <img src="./images/theblack_img03.jpg" alt="zoning" class="zoning_img_00">
+                        <img src="./images/theblack_jonning01.jpg" alt="jonning01" class="zoning_img_01">
+                        <img src="./images/theblack_jonning02.jpg" alt="jonning02" class="zoning_img_02">
+                        <img src="./images/theblack_jonning03.jpg" alt="jonning03" class="zoning_img_03">
+                        <img src="./images/theblack_jonning04.jpg" alt="jonning04" class="zoning_img_04">
+                        <img src="./images/theblack_jonning05.jpg" alt="jonning05" class="zoning_img_05">
+                    <div class="zoning_text">
+                        <h2>Zoning</h2>
+                        <p>
+                            포켓스프링의 독립적인 지지력을 향상시켜 미세한 진동까지 찾아내 ‘흔들리지 않는 편안함’을 실현합니다
+                        </p>
+                    </div> <!-- zoning_text -->
+                </div> <!-- zoning -->
+
+                <div class="layering">
+                    <div class="layering_flex">
+                        <img src="./images/theblack_img04.jpg" alt="layering">
+                        <div class="layering_text">
+                            <h2>Layering</h2>
+                            <p>
+                                Silk · Cashmere · Linen 등 약 50여 종의 엄선된 프리미엄 소재를 편안함을 구현해내는 최상의 방식으로 다양하게 조합하여 물리적인 부드러움은 물론 매트리스에 눕는 첫 순간의 1차적인 느낌을 완성합니다
+                            </p>
+                        </div> <!-- layering_text -->
+                    </div> <!-- layering_flex -->
+
+                    <div class="mat">
+                        <div class="spring">
+                            <img src="./images/theblack_img05.jpg" alt="Black Micro Pocket Spring" class="mat_img">
+                            <div class="spring_text">
+                                <h2>Black Micro Pocket Spring</h2>
+                                <p>
+                                    ‘포켓 위의 포켓’, 오직 뷰티레스트 블랙에만 허락된 부드러운 지지력을 선사합니다
+                                </p>
+                            </div> <!-- spring_text -->
+                        </div> <!-- spring -->
+
+                        <div class="friendly">
+                            <img src="./images/theblack_img06.jpg" alt="Eco-friendly" class="mat_img">
+                            <div class="friendly_text">
+                                <h2>Eco-friendly</h2>
+                                <p>
+                                    시몬스만의 엄격한 기준을 경험하세요 최고의 기술력을 자랑하는 자체 생산 시스템을 통해 국내 제작 모든 매트리스에 국가 공인 친환경 인증을 획득했습니다
+                                </p>
+                            </div> <!-- friendly_text -->
+                        </div> <!-- friendly -->
+                    </div> <!-- mat -->
+                </div> <!-- layering -->
+
+                <div class="safety">
+                    <img src="./images/theblack_img07.jpg" alt="safety first">
+                    <div class="safety_text">
+                        <h2>Safety First</h2>
+                        <p class="cc_1">
+                            국내 최초, 국내 유일 국제표준(ISO 12949)과 국내 표준시험방법(KS F ISO 12949)을 모두 만족시키는 한국 시몬스 난연 매트리스. 생활 화재로부터 최적의 안전성까지 고려하는 한국 시몬스의 끊임없는 연구 · 개발입니다.
+                        </p>
+                        <p class="cc_2">
+                            한국 시몬스는 한국화재보험협회 부설 방재시험연구원과 함께 국제표준화기구 ISO 및 국내 KS 화재안전 표준을 바탕으로 공동 연구를 통해 화재안전 성능을 확보한 난연 매트리스를 개발했습니다.
+                        </p>
+                        <p class="cc_3">
+                            국내에서 자체 생산되어 유통되는 일반 가정용 난연 매트리스는 한국 시몬스 제품이 유일하며, 전 제품을 국내 최초, 국내 유일 국제표준(ISO 12949)과 국내 표준시험방법(KS F ISO 12949)을 모두 만족시키는 매트리스로 개발해 방재시험연구원으로부터 이에 대한 시험성적서를 발급 받았습니다. <br> (2019년 10월 기준)
+                        </p>
+                    </div> <!-- safety_text -->
+                </div> <!-- safety -->
+            </div> <!-- wrapper -->
+        </section>
+    </main>
+</body>
+</html>

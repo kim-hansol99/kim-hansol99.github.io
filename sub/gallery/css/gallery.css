@@ -1,0 +1,909 @@
+@charset "UTF-8";
+@import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
+@import url("https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+::-moz-input-placeholder, ::-moz-textarea-placeholder {
+  color: #fefefc;
+  font-size: 16px;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
+  color: #fefefc;
+  font-size: 16px;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "SCoreDream";
+  background-color: #fefefc;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+span {
+  display: block;
+  font-size: 1em;
+}
+
+header,
+nav,
+main,
+section,
+aside,
+article,
+footer {
+  display: block;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-left: 80px;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  border-bottom: 1px solid #333;
+  background-color: #fefefc;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 80px;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 60px 0;
+    border-bottom: 0;
+    border-right: 1px solid #333;
+  }
+}
+
+header h1 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media screen and (min-width: 1024px) {
+  header h1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+header nav {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header nav ul.gnb li {
+  display: block;
+}
+
+header nav ul.gnb li img {
+  width: 100%;
+  height: auto;
+}
+
+header div.side-menu {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.side-menu .s-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header div.side-menu .s-menu li {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.side-menu .s-menu li {
+    display: block;
+    margin-top: 35px;
+  }
+}
+
+header div.side-menu .s-menu li:first-child {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+header div.side-menu .s-menu li:first-child a {
+  color: #333333;
+}
+
+header div.side-menu .s-menu li:last-child {
+  display: block;
+}
+
+header div.side-menu .s-menu li:last-child a img {
+  width: 25px;
+  height: 25px;
+}
+
+header div.menu-sub {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0 40px;
+  margin: 0 auto;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (min-width: 1024px) {
+  header div.menu-sub {
+    margin-left: 80px;
+    width: 450px;
+  }
+}
+
+header div.menu-sub a.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 60px;
+}
+
+header div.menu-sub a {
+  color: #333333;
+  padding: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 36px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header div.menu-sub a:hover {
+  color: #999;
+}
+
+header div.menu-sub a:focus {
+  color: #999;
+}
+
+header div.menu-sub ul.myMenu {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  text-align: left;
+}
+
+header div.menu-sub ul.myMenu .menu-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header div.menu-sub ul.myMenu .menu-top a {
+  font-size: 22px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+header div.menu-sub ul.myMenu .menu-top a:hover {
+  color: #999;
+}
+
+header div.menu-sub ul.myMenu .menu-top a:focus {
+  color: #999;
+}
+
+header div.menu-sub ul.myMenu li {
+  margin-bottom: 10px;
+}
+
+header div.menu-sub ul.myMenu li ul li a {
+  font-weight: 400;
+  font-size: 20px;
+  text-indent: 30px;
+}
+
+header div.search-sub {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: 1;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+header div.search-sub .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 60px;
+  cursor: pointer;
+  color: #fefefc;
+}
+
+header div.search-sub .closebtn:hover {
+  color: #ccc;
+}
+
+header div.search-sub .search-sub-content {
+  position: relative;
+  top: 45%;
+  -webkit-transform: translateYs(-45%);
+          transform: translateYs(-45%);
+  width: 100%;
+  margin: auto;
+}
+
+header div.search-sub .search-sub-content input {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  width: 80%;
+  margin: auto;
+  background: #fefefc;
+}
+
+header div.search-sub .search-sub-content input:hover {
+  background: #f1f1f1;
+}
+
+main {
+  width: 100%;
+}
+
+main section.gallery-top {
+  position: relative;
+  width: 100%;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.gallery-top {
+    padding-top: 0;
+  }
+}
+
+main section.gallery-top h2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fefefc;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-family: "PT Serif", serif;
+  text-align: center;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  main section.gallery-top h2 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.gallery-top h2 {
+    font-size: 70px;
+    padding-top: 0;
+  }
+}
+
+main section.gallery-top div.img-wrap {
+  width: 100%;
+}
+
+main section.gallery-top div.img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+main section.tap {
+  width: 100%;
+  margin: 50px 0 65px 0;
+}
+
+@media screen and (min-width: 768px) {
+  main section.tap {
+    margin: 100px 0 85px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.tap {
+    margin: 145px 0 100px 0;
+  }
+}
+
+main section.tap h2 {
+  display: none;
+}
+
+main section.tap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.tap ul li {
+  padding: 0 25px;
+}
+
+main section.tap ul li .point-color-add {
+  color: #82ca9c;
+}
+
+@media screen and (min-width: 768px) {
+  main section.tap ul li {
+    padding: 0 45px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.tap ul li {
+    padding: 0 60px;
+  }
+}
+
+main section.tap ul li a {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  main section.tap ul li a {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.tap ul li a {
+    font-size: 32px;
+  }
+}
+
+main section.tap ul li a:hover {
+  color: #82ca9c;
+}
+
+main section.tap ul li:first-child {
+  border-right: 2px solid #333333;
+}
+
+main div.gallery {
+  width: 100%;
+}
+
+main div.gallery section.gallery-title {
+  width: 100%;
+}
+
+main div.gallery section.gallery-title h2 {
+  display: none;
+}
+
+main div.gallery section.gallery-title div.sec1-img-wrap {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery section.gallery-title div.sec1-img-wrap {
+    font-size: 25px;
+  }
+}
+
+main div.gallery section.gallery-title div.sec1-img-wrap img {
+  width: 25px;
+  height: auto;
+  margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.gallery section.gallery-title div.sec1-img-wrap img {
+    width: 30px;
+  }
+}
+
+main div.gallery section.gallery-title div.sec1-txt {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+main div.gallery section.gallery-title div.sec1-txt p {
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery section.gallery-title div.sec1-txt p {
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 500;
+    color: #999;
+  }
+}
+
+main div.gallery section.gallery-intro {
+  text-align: center;
+  color: #333333;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1320px;
+}
+
+main div.gallery section.gallery-intro div.g {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery section.gallery-intro div.g {
+    margin-bottom: 150px;
+  }
+}
+
+main div.gallery section.gallery-intro div.g hr {
+  width: 150px;
+  margin: auto;
+  margin-top: 75px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery section.gallery-intro div.g hr {
+    width: 320px;
+    margin-top: 110px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main div.gallery section.gallery-intro div.g hr {
+    margin-bottom: 30px;
+  }
+}
+
+main div.gallery section.gallery-intro div.g h2 {
+  font-size: 30px;
+  font-family: "PT Serif", serif;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery section.gallery-intro div.g h2 {
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main div.gallery section.gallery-intro div.g h2 {
+    margin-bottom: 85px;
+  }
+}
+
+main div.gallery section.gallery-intro div.g .g-des {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery section.gallery-intro div.g .g-des {
+    margin-bottom: 40px;
+  }
+}
+
+main div.gallery section.gallery-intro div.g .g-des p {
+  line-height: 1.5;
+  width: 90%;
+  font-size: 14px;
+  margin: auto;
+  color: #999;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery section.gallery-intro div.g .g-des p {
+    font-size: 18px;
+  }
+}
+
+main div.gallery section.gallery-intro div.g div.g-img-wrap {
+  padding: 0 20px;
+}
+
+main div.gallery section.gallery-intro div.g div.g-img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+main div.gallery-search {
+  width: 100%;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.gallery-search {
+    padding: 0 20px;
+  }
+}
+
+main div.gallery-search div.search {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery-search div.search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1320px;
+    margin-bottom: 150px;
+  }
+}
+
+main div.gallery-search div.search section.search-section {
+  width: 100%;
+  border-top: 1px solid #c4c4c4;
+}
+
+main div.gallery-search div.search section.search-section ::-webkit-scrollbar {
+  width: 2px;
+  /* 스크롤바의 너비 */
+}
+
+main div.gallery-search div.search section.search-section ::-webkit-scrollbar-thumb {
+  height: auto;
+  /* 스크롤바의 길이 */
+  background: #c4c4c4;
+  /* 스크롤바의 색상 */
+  border-radius: 50px;
+}
+
+main div.gallery-search div.search section.search-section ::-webkit-scrollbar-track {
+  background: #fff;
+  /*스크롤바 뒷 배경 색상*/
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery-search div.search section.search-section {
+    width: 500px;
+    border: 1px solid #c4c4c4;
+  }
+}
+
+main div.gallery-search div.search section.search-section div.search-tap {
+  width: 100%;
+  text-align: center;
+}
+
+main div.gallery-search div.search section.search-section div.search-tap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main div.gallery-search div.search section.search-section div.search-tap ul li {
+  width: 50%;
+}
+
+main div.gallery-search div.search section.search-section div.search-tap ul li a {
+  padding: 20px;
+  color: #555;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+main div.gallery-search div.search section.search-section div.search-tap ul li a:hover {
+  border-bottom: 2px solid #82ca9c;
+  color: #333;
+  font-weight: 600;
+}
+
+main div.gallery-search div.search section.search-section div.search-tap ul li:first-child a {
+  border-bottom: 2px solid #82ca9c;
+  color: #333;
+  font-weight: 600;
+}
+
+main div.gallery-search div.search section.search-section div.search-bar {
+  width: 100%;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+main div.gallery-search div.search section.search-section div.search-bar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 25px;
+  background-color: #b9d3c2;
+}
+
+main div.gallery-search div.search section.search-section div.search-bar form input {
+  width: 70%;
+  background-color: transparent;
+  border: none;
+  padding: 8px 0 4px 0;
+}
+
+main div.gallery-search div.search section.search-section div.search-bar form input:active {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+main div.gallery-search div.search section.search-section div.search-bar form .search-icon-wrap img {
+  width: 23px;
+  height: auto;
+  color: #fefefc;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info {
+  width: 100%;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des {
+    height: 500px;
+    overflow-y: scroll;
+  }
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 25px 20px;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:first-child p.gal-add-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:first-child p.gal-add-add {
+  line-height: 1.5;
+  width: 80%;
+  font-size: 14px;
+  color: #555;
+  margin: 18px 0;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(2) .gal-number {
+  font-size: 14px;
+  color: #999;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(3) {
+  position: absolute;
+  top: 64px;
+  right: 20px;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(3) .gal-copy {
+  border-radius: 50px;
+  display: inline-block;
+  background-color: #b9d3c2;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(3) .gal-copy p {
+  padding: 2px 7px;
+  font-size: 12px;
+  color: #fefefc;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(4) {
+  position: absolute;
+  bottom: 15%;
+  right: 20px;
+}
+
+main div.gallery-search div.search section.search-section div.gallery-info .gallery-info-des .gal-name-address a:nth-child(4) .gal-popup {
+  font-size: 12px;
+  color: #555;
+}
+
+main div.gallery-search div.search section.search-map {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main div.gallery-search div.search section.search-map {
+    display: block;
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-left: none;
+  }
+}
+
+main div.gallery-search div.search section.search-map iframe {
+  width: 100%;
+}
+
+main div.gallery-search section.search-table {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.gallery-search section.search-table {
+    display: block;
+    width: 100%;
+    max-width: 1320px;
+    margin: 150px auto;
+  }
+}
+
+main div.gallery-search section.search-table table {
+  width: 100%;
+  text-align: left;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  border-collapse: collapse;
+}
+
+main div.gallery-search section.search-table table tr th {
+  padding: 15px 30px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #c4c4c4;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 2px solid #000;
+}
+
+main div.gallery-search section.search-table table tr td {
+  padding: 15px 30px;
+  color: #333;
+  font-size: 16px;
+  border: 1px solid #c4c4c4;
+  border-right: 0;
+  border-left: 0;
+}
+/*# sourceMappingURL=gallery.css.map */

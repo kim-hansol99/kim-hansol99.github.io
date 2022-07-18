@@ -1,0 +1,1560 @@
+@charset "UTF-8";
+@import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
+@import url("https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css");
+@import url("https://fonts.googleapis.com/css2?family=Ramaraja&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "SCoreDream";
+  word-break: keep-all;
+  background-color: #fefefc;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  vertical-align: bottom;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+span {
+  display: block;
+  font-size: 1em;
+}
+
+header,
+nav,
+main,
+section,
+aside,
+article,
+footer {
+  display: block;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-left: 80px;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  border-bottom: 1px solid #333;
+  background-color: #fefefc;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 80px;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 60px 0;
+    border-bottom: 0;
+    border-right: 1px solid #333;
+  }
+}
+
+header h1 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media screen and (min-width: 1024px) {
+  header h1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+header nav {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header nav ul.gnb li {
+  display: block;
+}
+
+header nav ul.gnb li img {
+  width: 100%;
+  height: auto;
+}
+
+header div.side-menu {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.side-menu .s-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header div.side-menu .s-menu li {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.side-menu .s-menu li {
+    display: block;
+    margin-top: 35px;
+  }
+}
+
+header div.side-menu .s-menu li:first-child {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+header div.side-menu .s-menu li:first-child a {
+  color: #333333;
+}
+
+header div.side-menu .s-menu li:last-child {
+  display: block;
+}
+
+header div.side-menu .s-menu li:last-child a img {
+  width: 25px;
+  height: 25px;
+}
+
+header div.menu-sub {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0 40px;
+  margin: 0 auto;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (min-width: 1024px) {
+  header div.menu-sub {
+    margin-left: 80px;
+    width: 450px;
+  }
+}
+
+header div.menu-sub a.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 60px;
+}
+
+header div.menu-sub a {
+  color: #333333;
+  padding: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 36px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header div.menu-sub a:hover {
+  color: #999;
+}
+
+header div.menu-sub a:focus {
+  color: #999;
+}
+
+header div.menu-sub ul.myMenu {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  text-align: left;
+}
+
+header div.menu-sub ul.myMenu .menu-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header div.menu-sub ul.myMenu .menu-top a {
+  font-size: 22px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+header div.menu-sub ul.myMenu .menu-top a:hover {
+  color: #999;
+}
+
+header div.menu-sub ul.myMenu .menu-top a:focus {
+  color: #999;
+}
+
+header div.menu-sub ul.myMenu li {
+  margin-bottom: 10px;
+}
+
+header div.menu-sub ul.myMenu li ul li a {
+  font-weight: 400;
+  font-size: 20px;
+  text-indent: 30px;
+}
+
+header div.search-sub {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: 1;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+header div.search-sub .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 60px;
+  cursor: pointer;
+  color: #fefefc;
+}
+
+header div.search-sub .closebtn:hover {
+  color: #ccc;
+}
+
+header div.search-sub .search-sub-content {
+  position: relative;
+  top: 45%;
+  -webkit-transform: translateYs(-45%);
+          transform: translateYs(-45%);
+  width: 100%;
+  margin: auto;
+}
+
+header div.search-sub .search-sub-content input {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  width: 80%;
+  margin: auto;
+  background: #fefefc;
+}
+
+header div.search-sub .search-sub-content input:hover {
+  background: #f1f1f1;
+}
+
+main #title_se {
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  main #title_se {
+    padding-top: 0;
+  }
+}
+
+main #title_se .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 150px;
+  background: url(../images/history_visual.jpg) no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  main #title_se .title {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #title_se .title {
+    height: 538px;
+  }
+}
+
+main #title_se .title .wrapper {
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+main #title_se .title .wrapper h1 {
+  font-family: "Ramaraja", serif;
+  font-size: 2em;
+  font-weight: 300;
+  font-style: italic;
+  color: #fefefc;
+  text-align: center;
+  text-shadow: 3px 3px 2px #000;
+  line-height: 1.2em;
+}
+
+@media screen and (min-width: 768px) {
+  main #title_se .title .wrapper h1 {
+    font-size: 3em;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px #000;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #title_se .title .wrapper h1 {
+    font-size: 4em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-shadow: 3px 3px 2px #000;
+  }
+}
+
+main #heritage {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #heritage {
+    margin-top: 200px;
+  }
+}
+
+main #heritage .wrapper {
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper {
+    position: relative;
+  }
+}
+
+main #heritage .wrapper h1 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .br {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #333333;
+  }
+}
+
+main #heritage .wrapper img, main #heritage .wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper img, main #heritage .wrapper iframe {
+    display: inline;
+    width: 47%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper img[class*="con"] {
+    width: 20px;
+    height: 13px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #heritage .wrapper iframe {
+    height: 250px;
+  }
+}
+
+main #heritage .wrapper h2 {
+  font-family: "Ramaraja", serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: #82ca9c;
+  line-height: 37.5px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper h2 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #heritage .wrapper h2 {
+    font-family: "Ramaraja", serif;
+    font-size: 3em;
+    font-weight: 700;
+    color: #82ca9c;
+    line-height: 37.5px;
+  }
+}
+
+main #heritage .wrapper .sub {
+  font-size: 0.9em;
+  font-weight: 800;
+  color: #000;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .sub {
+    letter-spacing: -0.01em;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #heritage .wrapper .sub {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: -0.01em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+main #heritage .wrapper p {
+  line-height: 1.5;
+  font-size: 14px;
+  margin: auto;
+  color: #999;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper p {
+    line-height: 1.5;
+    font-size: 18px;
+    margin: auto;
+    color: #999;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_70, main #heritage .wrapper .h_76, main #heritage .wrapper .h_25, main #heritage .wrapper .h_31, main #heritage .wrapper .h_07, main #heritage .wrapper .h_92-93-95 > .h_95 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #heritage .wrapper .h_70, main #heritage .wrapper .h_76, main #heritage .wrapper .h_25, main #heritage .wrapper .h_31, main #heritage .wrapper .h_07, main #heritage .wrapper .h_92-93-95 > .h_95 {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_92-93-95 > .h_92,
+  main #heritage .wrapper .h_92-93-95 > .h_93 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #heritage .wrapper .h_92-93-95 > .h_92,
+  main #heritage .wrapper .h_92-93-95 > .h_93 {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_70 > .text_70,
+  main #heritage .wrapper .h_25 > .text_25,
+  main #heritage .wrapper .h_31 > .text_31,
+  main #heritage .wrapper .h_07 > .text_07,
+  main #heritage .wrapper .text_92-93-95 {
+    width: 47%;
+    margin-left: 6%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_70 > .text_70 h2, main #heritage .wrapper .h_70 > .text_70 p,
+  main #heritage .wrapper .h_25 > .text_25 h2,
+  main #heritage .wrapper .h_25 > .text_25 p,
+  main #heritage .wrapper .h_31 > .text_31 h2,
+  main #heritage .wrapper .h_31 > .text_31 p,
+  main #heritage .wrapper .h_07 > .text_07 h2,
+  main #heritage .wrapper .h_07 > .text_07 p,
+  main #heritage .wrapper .text_92-93-95 h2,
+  main #heritage .wrapper .text_92-93-95 p {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_27, main #heritage .wrapper .h_99, main #heritage .wrapper .h_58-970 > .h_970 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #heritage .wrapper .h_27, main #heritage .wrapper .h_99, main #heritage .wrapper .h_58-970 > .h_970 {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_58-970 > .h_58,
+  main #heritage .wrapper .h_18 > .factorium,
+  main #heritage .wrapper .h_18 > .terrace,
+  main #heritage .wrapper .h_18 > .safety_first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #heritage .wrapper .h_58-970 > .h_58,
+  main #heritage .wrapper .h_18 > .factorium,
+  main #heritage .wrapper .h_18 > .terrace,
+  main #heritage .wrapper .h_18 > .safety_first {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_76 > .text_76,
+  main #heritage .wrapper .h_27 > .text_27,
+  main #heritage .wrapper .h_99 > .text_99,
+  main #heritage .wrapper .text_58-970,
+  main #heritage .wrapper .text_18 {
+    width: 47%;
+    margin-right: 6%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_76 > .text_76 h2, main #heritage .wrapper .h_76 > .text_76 p,
+  main #heritage .wrapper .h_27 > .text_27 h2,
+  main #heritage .wrapper .h_27 > .text_27 p,
+  main #heritage .wrapper .h_99 > .text_99 h2,
+  main #heritage .wrapper .h_99 > .text_99 p,
+  main #heritage .wrapper .text_58-970 h2,
+  main #heritage .wrapper .text_58-970 p,
+  main #heritage .wrapper .text_18 h2,
+  main #heritage .wrapper .text_18 p {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_70 {
+    position: relative;
+  }
+}
+
+main #heritage .wrapper .h_70 .con_01 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_70 .con_01 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_76 {
+    position: relative;
+  }
+}
+
+main #heritage .wrapper .h_76 .con_02 {
+  width: 20px;
+  height: 13px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_76 .con_02 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_25 {
+    position: relative;
+  }
+}
+
+main #heritage .wrapper .h_25 .con_03 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_25 .con_03 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+main #heritage .wrapper .h_27 .img_27 {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_27 .img_27 {
+    width: 47%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+main #heritage .wrapper .h_27 .img_27 .ta {
+  display: inline;
+  width: 18%;
+  height: 49%;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+main #heritage .wrapper .h_27 .img_27 .ta:last-child {
+  margin-right: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_27 .img_27 .ta {
+    display: inline-block;
+    width: 30%;
+    height: 49%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_27 .img_27 .ta:nth-child(3) {
+    margin-right: 0px;
+  }
+}
+
+main #heritage .wrapper .h_27 .con_04 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_27 .con_04 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+main #heritage .wrapper .h_31 .img_31 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_31 .img_31 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 47%;
+  }
+}
+
+main #heritage .wrapper .h_31 .img_31 img {
+  width: 50%;
+  height: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_31 .img_31 img {
+    display: inline-block;
+    width: 50%;
+    height: 90%;
+  }
+}
+
+main #heritage .wrapper .h_31 .con_05 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_31 .con_05 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_58 {
+    position: relative;
+  }
+}
+
+main #heritage .wrapper .h_58 .con_06 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_58 .con_06 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_970 {
+    position: relative;
+  }
+}
+
+main #heritage .wrapper .h_970 .con_07 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_970 .con_07 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_92 {
+    position: relative;
+  }
+}
+
+main #heritage .wrapper .h_92 .con_08 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_92 .con_08 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_93 {
+    position: relative;
+  }
+}
+
+main #heritage .wrapper .h_93 .con_09 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_93 .con_09 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_95 {
+    position: relative;
+  }
+}
+
+main #heritage .wrapper .h_95 .con_10 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_95 .con_10 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_99 {
+    position: relative;
+  }
+}
+
+main #heritage .wrapper .h_99 .con_11 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_99 .con_11 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_07 {
+    position: relative;
+  }
+}
+
+main #heritage .wrapper .h_07 .con_12 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_07 .con_12 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_18 {
+    position: relative;
+  }
+}
+
+main #heritage .wrapper .h_18 .con_13 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_18 .con_13 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+main #heritage .wrapper .h_18 .factorium > img,
+main #heritage .wrapper .h_18 .terrace > img,
+main #heritage .wrapper .h_18 .safety_first > img {
+  margin-bottom: 30px;
+}
+
+main #heritage .wrapper .h_18 .text_18 h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  main #heritage .wrapper .h_18 .text_18 h2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #heritage .wrapper .h_18 .text_18 h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+main #philosophy {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy {
+    width: 100%;
+    background: url(../images/phil_img.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #philosophy {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #philosophy .wrapper {
+    padding-top: 25px;
+    padding-bottom: 100px;
+  }
+}
+
+main #philosophy .wrapper h2 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper h2 {
+    display: block;
+    font-family: "Ramaraja", serif;
+    font-size: 1em;
+    font-weight: 200;
+    font-style: italic;
+    margin: 0;
+    color: #fefefc;
+    line-height: 0.8em;
+    text-align: center;
+    text-shadow: 2px 2px 2px #131313;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #philosophy .wrapper h2 {
+    display: block;
+    font-family: "Ramaraja", serif;
+    font-size: 1.2em;
+    font-weight: 200;
+    font-style: italic;
+    margin: 0;
+    color: #fefefc;
+    line-height: 0.8em;
+  }
+}
+
+main #philosophy .wrapper p {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper p {
+    display: block;
+    font-family: "Noto Serif KR", serif;
+    font-size: 0.4em;
+    font-weight: 300;
+    color: #fefefc;
+    text-align: center;
+    letter-spacing: 0.05em;
+    line-height: p-height;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #philosophy .wrapper p {
+    display: block;
+    font-family: "Noto Serif KR", serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #fefefc;
+    text-align: center;
+    letter-spacing: 0.05em;
+    line-height: p-height;
+  }
+}
+
+main #philosophy .wrapper .phil_title {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: url("../images/phil_img.jpg");
+  background-size: cover;
+}
+
+main #philosophy .wrapper .phil_title h1 {
+  font-family: "Ramaraja", serif;
+  font-size: 3em;
+  font-weight: 200;
+  font-style: italic;
+  text-shadow: 2px 5px 3px #858585;
+  color: #fefefc;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_title h1 {
+    font-family: "Ramaraja", serif;
+    font-size: 4em;
+    font-weight: 200;
+    text-shadow: 4px 6px 3px #858585;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #philosophy .wrapper .phil_title h1 {
+    font-family: "Ramaraja", serif;
+    font-size: 6em;
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_title {
+    background: none;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #philosophy .wrapper .phil_title {
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+main #philosophy .wrapper .phil_flex .comfort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: url("../images/list1.jpg");
+  background-size: cover;
+}
+
+main #philosophy .wrapper .phil_flex .comfort::before {
+  content: "Comfort";
+  height: 70px;
+  display: block;
+  font-family: "Ramaraja", serif;
+  font-size: 2em;
+  font-weight: 200;
+  font-style: italic;
+  margin: 0;
+  color: #fefefc;
+  line-height: 70px;
+  line-height: 70px;
+  text-shadow: 4px 4px 2px #131313;
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .comfort::before {
+    display: none;
+  }
+}
+
+main #philosophy .wrapper .phil_flex .comfort:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+main #philosophy .wrapper .phil_flex .comfort:hover::before {
+  content: "편안함의 원칙을 지켜나갑니다";
+  display: block;
+  font-family: "Noto Serif KR", serif;
+  font-size: 0.4em;
+  font-weight: 300;
+  color: #fefefc;
+  text-align: center;
+  letter-spacing: 0.05em;
+  line-height: p-height;
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .comfort:hover::before {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .comfort {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 25%;
+    height: 100px;
+    padding-bottom: 23%;
+    margin-right: 20px;
+  }
+}
+
+main #philosophy .wrapper .phil_flex .eco-friendly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: url("../images/list2.jpg");
+  background-size: cover;
+}
+
+main #philosophy .wrapper .phil_flex .eco-friendly::before {
+  content: "Eco-friendly";
+  height: 70px;
+  display: block;
+  font-family: "Ramaraja", serif;
+  font-size: 2em;
+  font-weight: 200;
+  font-style: italic;
+  margin: 0;
+  color: #fefefc;
+  line-height: 70px;
+  line-height: 70px;
+  text-shadow: 4px 4px 2px #131313;
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .eco-friendly::before {
+    display: none;
+  }
+}
+
+main #philosophy .wrapper .phil_flex .eco-friendly:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+main #philosophy .wrapper .phil_flex .eco-friendly:hover::before {
+  content: "다음 세대를 생각합니다";
+  display: block;
+  font-family: "Noto Serif KR", serif;
+  font-size: 0.4em;
+  font-weight: 300;
+  color: #fefefc;
+  text-align: center;
+  letter-spacing: 0.05em;
+  line-height: p-height;
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .eco-friendly:hover::before {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .eco-friendly {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 25%;
+    height: 100px;
+    padding-bottom: 23%;
+    margin-right: 20px;
+  }
+}
+
+main #philosophy .wrapper .phil_flex .s_c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: url("../images/list3.jpg");
+  background-size: cover;
+}
+
+main #philosophy .wrapper .phil_flex .s_c::before {
+  content: "Science & Craftsmanship";
+  height: 70px;
+  display: block;
+  font-family: "Ramaraja", serif;
+  font-size: 1.7em;
+  font-weight: 200;
+  font-style: italic;
+  margin: 0;
+  color: #fefefc;
+  line-height: 70px;
+  line-height: 70px;
+  text-shadow: 4px 4px 2px #131313;
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .s_c::before {
+    display: none;
+  }
+}
+
+main #philosophy .wrapper .phil_flex .s_c:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+main #philosophy .wrapper .phil_flex .s_c:hover::before {
+  content: "품질에 대한 고집으로 기본 원칙을 지킵니다";
+  display: block;
+  font-family: "Noto Serif KR", serif;
+  font-size: 0.4em;
+  font-weight: 300;
+  color: #fefefc;
+  text-align: center;
+  letter-spacing: 0.05em;
+  line-height: p-height;
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .s_c:hover::before {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .s_c {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 25%;
+    height: 100px;
+    padding-bottom: 23%;
+    margin-right: 20px;
+  }
+}
+
+main #philosophy .wrapper .phil_flex .life {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: url("../images/list4.jpg");
+  background-size: cover;
+}
+
+main #philosophy .wrapper .phil_flex .life::before {
+  content: "Life";
+  height: 70px;
+  display: block;
+  font-family: "Ramaraja", serif;
+  font-size: 2em;
+  font-weight: 200;
+  font-style: italic;
+  margin: 0;
+  color: #fefefc;
+  line-height: 70px;
+  line-height: 70px;
+  text-shadow: 4px 4px 2px #131313;
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .life::before {
+    display: none;
+  }
+}
+
+main #philosophy .wrapper .phil_flex .life:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+main #philosophy .wrapper .phil_flex .life:hover::before {
+  content: "침대를 넘어 인생을 만듭니다";
+  display: block;
+  font-family: "Noto Serif KR", serif;
+  font-size: 0.4em;
+  font-weight: 300;
+  color: #fefefc;
+  text-align: center;
+  letter-spacing: 0.05em;
+  line-height: p-height;
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .life:hover::before {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .life {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 25%;
+    height: 100px;
+    padding-bottom: 23%;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #philosophy .wrapper .phil_flex .phil_txt {
+    margin: 35% 20% 0 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #philosophy .wrapper .phil_flex .phil_txt {
+    margin: 40% 20% 0 20%;
+  }
+}
+/*# sourceMappingURL=heritage.css.map */

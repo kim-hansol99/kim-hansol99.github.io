@@ -1,0 +1,60 @@
+@mixin txt($size, $weight) {
+    font: {
+        size: $size;
+        weight: $weight;
+    }
+    color: #000;
+}
+
+@mixin p_des($p_des_size:14px) {
+    line-height: 1.5;
+    font-size: $p_des_size;
+    // tablet에서 18px
+    margin: auto;
+    color: #999;
+}
+
+@mixin dire($row: row) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: $row;
+    align-items: center;
+    width: 100%;
+}
+
+@mixin dire_pc {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+@mixin dire_text_ta {
+    width: 47%;
+    // background-color: palegreen;
+}
+
+@mixin wrapper {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    // background-color: slateblue;
+}
+
+@mixin responsive($break) {
+    @if $break == mobile-size {
+        @media screen and (min-width: $break-mobile) {
+            @content;
+        }
+    }
+    @else if $break == tablet-size {
+        @media screen and (min-width: $break-tablet) {
+            @content;
+        }
+    }
+    @else if $break == pc-size {
+        @media screen and (min-width: $break-pc) {
+            @content;
+        }
+    }
+}

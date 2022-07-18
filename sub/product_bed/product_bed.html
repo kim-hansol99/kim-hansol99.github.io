@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/product_bed.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/product_bed.js"></script>
+    <link rel="shortcut icon" href="./images/1_favicon_icon.ico.ico">
+    <title>Product</title>
+</head>
+<body>
+    <header>
+        <h1><a href="../../index.html"><img src="./images/header_logo.png" alt="logo"></a></h1>
+
+        <nav>
+            <ul class="gnb">
+                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn" onclick="openMenu()"></a></li>
+            </ul>
+        </nav>
+
+        <div class="side-menu">
+            <ul class="s-menu">
+                <li><a href="../etc/2_login_member/login_member.html">Login</a></li>
+                <li><a href="../etc/3_Cart/cart.html"><img src="./images/cart.png" alt="cart-icon"></a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search-icon" onclick="openSearh()"></a></li>
+            </ul>
+        </div> 
+
+        <div class="menu-sub" id="menu-sub">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            
+            <ul class="myMenu">
+                <li class="menu-top">
+                    <a href="../etc/2_login_member/login_member.html">로그인</a>
+                    <a href="../etc/3_Cart/cart.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="#" class="sub-menu1">Product</a>
+                    <ul class="sub-menu-des1">
+                        <li><a href="../product_bed/product_bed.html">Bed</a></li>
+                        <li><a href="../product_bedding/product_bedding.html">Bedding</a></li>
+                        <li><a href="../product_furniture/product_furniture.html">Furniture</a></li>
+                        <li><a href="../product_roomset/product_roomset.html">RoomSet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="sub-menu2">Brand</a>
+                    <ul class="sub-menu-des2">
+                        <li><a href="../brand/the_black/the_black.html">the Black</a></li>
+                        <li><a href="../brand/heritage/heritage.html">heritage</a></li>
+                    </ul>
+                </li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../community/community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <div id="search-sub" class="search-sub">
+            <span class="closebtn" onclick="closeSearch()">×</span>
+
+            <div class="search-sub-content">
+                <form action="#">
+                    <input type="text" placeholder="검색어를 입력하세요!" name="search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrapper">
+                <h1>BED</h1> 
+                <div class="tabs-menu">
+                    <ul class="tabs">
+                        <li><a href="#all">ALL</a></li>
+                        <li><a href="#mattress">Mattress</a></li>
+                        <li><a href="#foundation">Foundation</a></li>
+                        <li><a href="#frame">Frame</a></li>
+                    </ul>
+                </div> <!-- tabs-menu -->
+
+                <div class="filter-menu">
+                    <select name="sale" id="sale">
+                        <option value="all_sale">판매처</option>
+                        <option value="directly">직영</option>
+                        <option value="online">온라인</option>
+                        <option value="outlet">아울렛</option>
+                    </select>
+
+                    <select name="size" id="size">
+                        <option value="all_size">전체 사이즈</option>
+                        <option value="GK">GK / 그레이트킹</option>
+                        <option value="KK">KK / 킹오브킹</option>
+                        <option value="LK">LK / 라지킹</option>
+                        <option value="QE">QE / 퀸</option>
+                        <option value="SS">SS / 슈퍼싱글</option>
+                    </select>
+
+                    <select name="hardness" id="hardness">
+                        <option value="all_hardness">전체 경도</option>
+                        <option value="p class">P CLASS / 하드 타입</option>
+                        <option value="g class">G CLASS / 레귤러 타입</option>
+                        <option value="w class">W CLASS / 소프트 타입</option>
+                    </select>
+
+                    <select name="type" id="type">
+                        <option value="all_type">전체 타입</option>
+                        <option value="d-type">D-Type</option>
+                        <option value="f-type">F-Type</option>
+                        <option value="s-type">S-Type</option>
+                        <option value="ft-type">FT-Type</option>
+                        <option value="t-type">T-Type</option>
+                    </select>
+
+                    <select name="color" id="color">
+                        <option value="all_color">전체 컬러</option>
+                        <option value="natural">NATURAL</option>
+                        <option value="white">WHITE</option>
+                        <option value="brown">BROWN</option>
+                        <option value="gray">GRAY</option>
+                        <option value="colors">COLORS</option>
+                    </select>
+                </div> <!-- filter-menu -->
+
+                <div class="tabs-contents">
+                    <div class="all">
+                        <a href="../product_furniture/sub/table/table.html" class="mattress"><img src="./images/1-Lookbook-barbara-01.jpg" alt="Beautyrest Barbara"></a>
+                        <a href="../product_furniture/sub/table/table.html" class="mattress"><img src="./images/BR-온라인-Musk-02-Lookbook-01_1.jpg" alt="Beautyrest Musk"></a>
+                        <a href="../product_furniture/sub/table/table.html" class="mattress"><img src="./images/02-Loogbook-BR-대리점-fusion-01.jpg" alt="Beautyrest Fusion"></a>
+                        <a href="../product_furniture/sub/table/table.html" class="mattress"><img src="./images/02-Loogbook-BR-대리점-Raven-01.jpg" alt="Beautyrest Raven"></a>
+
+                        <a href="#" class="foundation"><img src="./images/FD-FR-02-Lookbook-1.png" alt="Beautyrest Premium Foundation"></a>
+                        <a href="#" class="foundation"><img src="./images/FD-SD-02-Lookbook-1.png" alt="Beautyrest Foundation"></a>
+
+                        <a href="#" class="frame"><img src="./images/Frame-rasid-lookbook-200615.jpg" alt="Rasid"></a>
+                        <a href="#" class="frame"><img src="./images/Latea-lookbook.jpg" alt="Latea"></a>
+                        <a href="#"><img src="./images/Olo-lookbook.jpg" alt="Olo"></a>
+                    </div> <!-- all -->
+                </div> <!-- tabs-contents -->
+            </div> <!-- wrapper -->
+        </section>
+    </main>
+</body>
+</html>

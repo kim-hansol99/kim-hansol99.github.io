@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPage</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/5_MyPage.js"></script>
+    <link rel="stylesheet" href="./css/MyPage01.css">
+    <link rel="shortcut icon" href="./images/1_favicon_icon.ico.ico">
+</head>
+<body> 
+    <header>
+        <h1><a href="../../../index.html"><img src="./images/header_logo.png" alt="logo"></a></h1>
+
+        <nav>
+            <ul class="gnb">
+                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn" onclick="openMenu()"></a></li>
+            </ul>
+        </nav>
+
+        <div class="side-menu">
+            <ul class="s-menu">
+                <li><a href="../2_login_member/login_member.html">Login</a></li>
+                <li><a href="../3_Cart/cart.html"><img src="./images/cart.png" alt="cart-icon"></a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search-icon" onclick="openSearh()"></a></li>
+            </ul>
+        </div> 
+
+        <div class="menu-sub" id="menu-sub">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            
+            <ul class="myMenu">
+                <li class="menu-top">
+                    <a href="../2_login_member/login_member.html">로그인</a>
+                    <a href="../3_Cart/cart.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="#" class="sub-menu1">Product</a>
+                    <ul class="sub-menu-des1">
+                        <li><a href="../../product_bed/product_bed.html">Bed</a></li>
+                        <li><a href="../../product_bedding/product_bedding.html">Bedding</a></li>
+                        <li><a href="../../product_furniture/product_furniture.html">Furniture</a></li>
+                        <li><a href="../../product_roomset/product_roomset.html">RoomSet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="sub-menu2">Brand</a>
+                    <ul class="sub-menu-des2">
+                        <li><a href="../../brand/the_black/the_black.html">the Black</a></li>
+                        <li><a href="../../brand/the_black/the_black.html">heritage</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../../community/community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <div id="search-sub" class="search-sub">
+            <span class="closebtn" onclick="closeSearch()">×</span>
+
+            <div class="search-sub-content">
+                <form action="#">
+                    <input type="text" placeholder="검색어를 입력하세요!" name="search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav class="main-menu">            
+            <div class="wrapper">
+                <ul class="top-menu-right">
+                    <li><a href="../../../index.html">HOME</a></li>
+                    <li><a href="../../community/community.html">고객센터</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="title-cart">
+            <div class="title">
+                <div class="title-fir">
+                    <p>My Page</p>
+                </div>
+
+                <div class="title-sub">
+                    <lp>마이페이지</lp>
+                </div>
+                
+            </div>
+
+            <div class="tabs-menu"> 
+                <ul class="tabs"> 
+                    <li><a href="#">주문/배송정보</a></li>
+                    <li><a href="#">위시리스트</a></li>
+                    <li><a href="#">My 쇼핑혜택</a></li>
+                    <li><a href="#">회원정보수정</a></li>
+                </ul>
+            </div>
+
+            <form class="notice-content">
+                <div class="notice-text">
+                    <p class="nt-text-alert">
+                        로그인 후 이용가능한 서비스 입니다
+                    </p>
+                    <button class="notice-submit"><a href="../2_login_member/login_member.html">로그인</a></button>
+                </div>
+            </form>
+
+        </div>
+
+
+    </main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+@mixin h1-mobile($size: 1.1em) {
+    font: {
+        size: $size;
+        weight: 700;
+    }
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 15px;
+}
+
+@mixin h1-pc {
+    font: {
+        size: 1.5em;
+        weight: 600;
+    }
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+}
+
+@mixin right_p($p-size: 1em) {
+    font: {
+        size: $p-size;
+        weight: 500;
+    }
+    text-align: left;
+    letter-spacing: 0.04em;
+}
+
+@mixin wrapper {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    // background-color: slateblue;
+}
+
+@mixin responsive($break) {
+    @if $break == mobile-size {
+        @media screen and (min-width: $break-mobile) {
+            @content;
+        }
+    }
+    @else if $break == tablet-size {
+        @media screen and (min-width: $break-tablet) {
+            @content;
+        }
+    }
+    @else if $break == pc-size {
+        @media screen and (min-width: $break-pc) {
+            @content;
+        }
+    }
+}
